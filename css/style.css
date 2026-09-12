@@ -180,6 +180,102 @@ body {
   animation-play-state: paused;
 }
 
+/* ==========================================================================
+   PREMIUM TECH STACK MARQUEE SYSTEM
+   ========================================================================== */
+.tech-marquee-wrapper {
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.tech-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 0.875rem;
+  padding: 0.35rem 0;
+  will-change: transform;
+  animation: tech-marquee-scroll 32s linear infinite;
+}
+
+.tech-marquee-wrapper:hover .tech-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes tech-marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.tech-card-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.45rem 0.875rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(210, 220, 237, 0.85);
+  border-radius: 0.875rem;
+  box-shadow: 0 1px 3px rgba(8, 20, 58, 0.03);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #08143a;
+  white-space: nowrap;
+  cursor: default;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card-item:hover {
+  transform: translateY(-2px);
+  border-color: #0062ff;
+  box-shadow: 0 6px 18px rgba(0, 98, 255, 0.12), 0 1px 3px rgba(8, 20, 58, 0.04);
+  background: #ffffff;
+}
+
+.tech-card-item .tech-logo {
+  width: 1.15rem;
+  height: 1.15rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card-item:hover .tech-logo {
+  transform: scale(1.15) translateY(-1px);
+}
+
+.tech-card-highlight {
+  border-color: rgba(0, 98, 255, 0.4);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f6ff 100%);
+  box-shadow: 0 2px 8px rgba(0, 98, 255, 0.08);
+}
+
+.tech-card-highlight::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #0062ff;
+  opacity: 0.75;
+  margin-left: -2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-marquee-track {
+    animation: none;
+  }
+}
+
 .animate-particle-1 {
   animation: float-particle 6s ease-in-out infinite;
 }
