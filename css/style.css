@@ -540,3 +540,105 @@ header.navbar-scrolled {
     transform: none !important;
   }
 }
+
+/* ==========================================================================
+   UNIVERSAL RESPONSIVE OPTIMIZATION SYSTEM (ONE DESIGN -> ALL SCREENS)
+   ========================================================================== */
+
+/* 1. Global Viewport & Container Safety */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, svg, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2. Fluid Typography for Crisp Text Hierarchy across 360px - 1920px */
+@media (max-width: 640px) {
+  h1 {
+    font-size: clamp(1.75rem, 7vw, 2.35rem) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-size: clamp(1.35rem, 5.5vw, 1.85rem) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* 3. Minimum 44px Touch Targets for Primary Interactive Controls */
+@media (pointer: coarse), (max-width: 768px) {
+  button:not(.text-xs),
+  a.btn-hover-lift,
+  .filter-tab-btn,
+  .filter-btn,
+  .category-btn,
+  .faq-toggle,
+  .faq-btn,
+  #mobile-menu-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  #mobile-menu a {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* 4. Touch-Friendly Filter Tabs & No-Scrollbar Utility */
+.filter-tabs-scroll {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  max-width: 100%;
+}
+.filter-tabs-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* 5. Mobile Vertical Connecting Line for Roadmap (cara-order.html) */
+@media (max-width: 639px) {
+  #workflowSteps {
+    position: relative;
+  }
+  #workflowSteps::before {
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    bottom: 2.5rem;
+    left: 2.35rem;
+    width: 2px;
+    background: linear-gradient(to bottom, #0062ff, rgba(0, 98, 255, 0.2));
+    z-index: 0;
+  }
+  #workflowSteps .step-card {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* 6. Tablet (768px - 1024px) Layout Comfort */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-container-tablet {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* 7. Ultrawide Desktop (1440px - 1920px) Max Width Restraints */
+@media (min-width: 1440px) {
+  .max-w-7xl {
+    max-width: 80rem; /* 1280px */
+  }
+  .max-w-4xl {
+    max-width: 56rem; /* 896px */
+  }
+}
+
