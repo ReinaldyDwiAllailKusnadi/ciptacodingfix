@@ -296,6 +296,24 @@ tailwind.config = {
 </div>
 </div>
 </div>
+<!-- Live Engineering & Architecture Telemetry -->
+<div class="pt-2 flex flex-wrap items-center gap-2.5 text-[11px] font-code text-[#495874]">
+  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white/95 border border-[#d2dced] shadow-2xs hover:border-[#0062ff]/50 transition-colors">
+    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+    <span class="text-[#08143a] font-bold">Arsitektur:</span>
+    <span class="text-[#0062ff]">Clean &amp; Terstruktur</span>
+  </div>
+  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white/95 border border-[#d2dced] shadow-2xs hover:border-[#0062ff]/50 transition-colors">
+    <span class="material-symbols-outlined text-emerald-600 text-[15px]">verified</span>
+    <span class="text-[#08143a] font-bold">Testing:</span>
+    <span class="text-emerald-600">Zero Error Sidang</span>
+  </div>
+  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white/95 border border-[#d2dced] shadow-2xs hover:border-[#0062ff]/50 transition-colors">
+    <span class="material-symbols-outlined text-[#0062ff] text-[15px]">security</span>
+    <span class="text-[#08143a] font-bold">Privasi:</span>
+    <span class="text-[#495874]">100% NDA</span>
+  </div>
+</div>
 </div>
 <!-- Right Column: REAL HUMAN VISUAL + INTERACTIVE LIVE TERMINAL + RADAR BADGE -->
 <div class="lg:col-span-6 relative">
@@ -353,7 +371,7 @@ tailwind.config = {
 </div>
 </div>
 <!-- FLOATING BADGE 3: INTERACTIVE LIVE TYPING TERMINAL OVERLAY DENGAN TABS & LIVE CURSOR -->
-<div class="hidden sm:block absolute top-10 -left-6 bg-[#08143a]/95 backdrop-blur-md text-slate-200 p-3.5 rounded-2xl shadow-2xl border border-white/20 max-w-[245px] font-code text-[11px] z-20 hover:border-[#0062ff] transition-all">
+<div class="hidden sm:block absolute top-10 -left-6 bg-[#08143a]/95 backdrop-blur-md text-slate-200 p-4 rounded-2xl shadow-2xl border border-white/20 max-w-[260px] font-code text-[11px] z-20 hover:border-[#0062ff] transition-all">
 <div class="flex items-center justify-between border-b border-white/10 pb-2 mb-2">
 <div class="flex gap-1.5">
 <span class="w-2.5 h-2.5 rounded-full bg-rose-500/90 inline-block"></span>
@@ -367,12 +385,15 @@ tailwind.config = {
 </div>
 <!-- Live typing target line -->
 <p class="text-[#60a5fa] font-semibold leading-tight flex items-center flex-wrap">
-<span class="text-emerald-400">const</span> result = <span class="text-amber-300" id="live-typing-text">"ACC Nilai A"</span><span class="cursor-blink"></span>
+<span class="text-emerald-400">const</span>&nbsp;result =&nbsp;<span class="text-amber-300" id="live-typing-text">"ACC Nilai A"</span><span class="cursor-blink"></span>
 </p>
-<p class="text-slate-400 mt-1">// 100% garansi dampingi sidang</p>
-<p class="text-emerald-400 flex items-center gap-1.5 mt-2 font-bold bg-emerald-500/10 px-2 py-1 rounded-md border border-emerald-500/20">
-<span class="material-symbols-outlined text-[13px]">done_all</span> Ready for Defense
-</p>
+<p class="text-slate-400 mt-1 text-[10px]">// 100% garansi dampingi sidang</p>
+<div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[10px]">
+  <span class="text-emerald-400 flex items-center gap-1 font-bold">
+    <span class="material-symbols-outlined text-[13px]">done_all</span> Ready for Defense
+  </span>
+  <span class="text-slate-400">v2.4.0</span>
+</div>
 </div>
 </div>
 </div>
@@ -618,6 +639,17 @@ tailwind.config = {
 </div>
 <h3 class="font-display text-base font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Skripsi &amp; Tugas Akhir IT</h3>
 <p class="text-xs text-[#495874]">Web, Mobile App, Python AI/ML, SPK, dan IoT didampingi sampai sidang ACC A.</p>
+<!-- Mini Dev Visual -->
+<div class="terminal-mini-box">
+  <div class="flex items-center justify-between border-b border-white/10 pb-1 mb-1.5 text-[9px] text-slate-400">
+    <span>● ● ● thesis_model.py</span>
+    <span class="text-emerald-400 font-semibold">Ready</span>
+  </div>
+  <p class="text-[10px]"><span class="text-purple-400">const</span> defense = <span class="text-amber-300">"ACC Nilai A"</span>;</p>
+  <p class="text-[10px] text-emerald-400 flex items-center gap-1 mt-0.5 font-medium">
+    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> <span>Akurasi 98% • Dampingi Sidang</span>
+  </p>
+</div>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Laravel</span>
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Flutter</span>
@@ -640,6 +672,17 @@ tailwind.config = {
 </div>
 <h3 class="font-display text-base font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Tugas Modul &amp; Praktikum</h3>
 <p class="text-xs text-[#495874]">Pengerjaan cepat C++, Java, Python, Struktur Data &amp; SQL lengkap komentar penjelas.</p>
+<!-- Mini Dev Visual -->
+<div class="terminal-mini-box">
+  <div class="flex items-center justify-between border-b border-white/10 pb-1 mb-1.5 text-[9px] text-slate-400">
+    <span>● ● ● algo_modul.cpp</span>
+    <span class="text-amber-300 font-semibold">O(log n)</span>
+  </div>
+  <p class="text-[10px]"><span class="text-purple-400">Node</span>* <span class="text-emerald-400">binarySearch</span>(Tree* t);</p>
+  <p class="text-[10px] text-emerald-400 flex items-center gap-1 mt-0.5 font-medium">
+    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> <span>Komentar di Setiap Baris Fungsi</span>
+  </p>
+</div>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">C++ / Java</span>
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Python</span>
@@ -662,6 +705,17 @@ tailwind.config = {
 </div>
 <h3 class="font-display text-base font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Website Profil &amp; Katalog UMKM</h3>
 <p class="text-xs text-[#495874]">Landing page modern cepat, SEO-friendly, dan tombol order WhatsApp langsung.</p>
+<!-- Mini Dev Visual -->
+<div class="bg-[#f8faff] rounded-xl border border-[#d2dced] p-2 text-xs">
+  <div class="flex items-center justify-between border-b border-[#d2dced]/70 pb-1 mb-1.5 text-[9px]">
+    <span class="flex gap-1"><span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span></span>
+    <span class="font-code text-[#495874]">https://umkm.id</span>
+    <span class="text-[9px] font-bold text-[#0062ff]">Score: 99</span>
+  </div>
+  <p class="text-[10px] text-[#08143a] font-semibold flex items-center gap-1">
+    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Fast Load &lt; 0.8s • Direct WA Order
+  </p>
+</div>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Next.js</span>
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Tailwind</span>
@@ -684,6 +738,17 @@ tailwind.config = {
 </div>
 <h3 class="font-display text-base font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Aplikasi Kasir POS &amp; ERP</h3>
 <p class="text-xs text-[#495874]">Sistem inventaris, kasir multi-cabang, cetak struk nota, dan laporan laba rugi real-time.</p>
+<!-- Mini Dev Visual -->
+<div class="terminal-mini-box">
+  <div class="flex items-center justify-between border-b border-white/10 pb-1 mb-1.5 text-[9px] text-slate-400">
+    <span>● ● ● pos_database.sql</span>
+    <span class="text-blue-300 font-semibold">PostgreSQL</span>
+  </div>
+  <p class="text-[10px]"><span class="text-purple-400">SELECT</span> branch, SUM(omset);</p>
+  <p class="text-[10px] text-emerald-400 flex items-center gap-1 mt-0.5 font-medium">
+    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> <span>Multi-Cabang &amp; Thermal Print OK</span>
+  </p>
+</div>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Laravel</span>
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Vue.js</span>
@@ -706,6 +771,15 @@ tailwind.config = {
 </div>
 <h3 class="font-display text-base font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Fix Bug &amp; Error Koding</h3>
 <p class="text-xs text-[#495874]">Penyelesaian error merah, konflik database, dan perbaikan performa kode lambat.</p>
+<!-- Mini Dev Visual -->
+<div class="terminal-mini-box">
+  <div class="flex items-center justify-between border-b border-white/10 pb-1 mb-1.5 text-[9px] text-slate-400">
+    <span>● ● ● debug_console</span>
+    <span class="text-emerald-400 font-semibold">Fixed (3ms)</span>
+  </div>
+  <p class="text-[10px] text-rose-400 line-through opacity-75">- Error 500: DB Timeout</p>
+  <p class="text-[10px] text-emerald-400 font-medium">+ Status: 200 OK Connection Restored</p>
+</div>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">All Stack</span>
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Remote Meet</span>
@@ -728,6 +802,17 @@ tailwind.config = {
 </div>
 <h3 class="font-display text-base font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Custom API &amp; Gateway</h3>
 <p class="text-xs text-[#495874]">Integrasi Payment Gateway (Midtrans/Xendit), WhatsApp Gateway, Bot, &amp; Cloud VPS.</p>
+<!-- Mini Dev Visual -->
+<div class="terminal-mini-box">
+  <div class="flex items-center justify-between border-b border-white/10 pb-1 mb-1.5 text-[9px] text-slate-400">
+    <span>● ● ● POST /v1/gateway</span>
+    <span class="text-purple-300 font-semibold">200 OK</span>
+  </div>
+  <p class="text-[10px]"><span class="text-purple-400">gateway</span>: <span class="text-amber-300">"Midtrans QRIS"</span>;</p>
+  <p class="text-[10px] text-emerald-400 flex items-center gap-1 mt-0.5 font-medium">
+    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> <span>Webhook &amp; Cloud VPS Terintegrasi</span>
+  </p>
+</div>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">Payment</span>
 <span class="px-2 py-0.5 rounded bg-[#f1f5fb]">WA API</span>
@@ -752,43 +837,68 @@ tailwind.config = {
 <p class="text-[#495874] text-xs sm:text-sm">Proses transparan didampingi engineer sampai selesai.</p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative">
-<!-- Connecting line between steps on desktop -->
-<div class="hidden lg:block absolute top-9 left-16 right-16 h-0.5 bg-gradient-to-r from-[#0062ff]/20 via-[#0062ff]/40 to-emerald-500/30 z-0 pointer-events-none"></div>
+<!-- Connecting line between steps on desktop with animated gradient glow -->
+<div class="hidden lg:block absolute top-9 left-16 right-16 h-1 bg-gradient-to-r from-[#0062ff] via-[#60a5fa] to-emerald-500 rounded-full z-0 opacity-40 timeline-connector-glow pointer-events-none"></div>
+
 <!-- Step 1 -->
-<div class="tilt-card stagger-1 bg-white p-5 rounded-2xl border border-[#d2dced] shadow-xs relative z-10 group hover:border-[#0062ff] transition-colors">
+<div class="timeline-step-card stagger-1 relative z-10 group">
 <div class="flex items-center justify-between mb-3">
 <div class="w-8 h-8 rounded-lg bg-[#0062ff] text-white font-bold text-sm flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform">1</div>
 <span class="material-symbols-outlined text-slate-400 group-hover:text-[#0062ff] transition-colors text-[20px]">upload_file</span>
 </div>
 <h3 class="font-display text-sm font-bold text-[#08143a]">Kirim Materi</h3>
 <p class="text-xs text-[#495874] mt-1">Kirim file tugas, silabus, atau gambaran web via WA.</p>
+<div class="flex items-center gap-1.5 mt-3 pt-2.5 border-t border-slate-100 text-[10px] font-code text-slate-500">
+  <span class="px-1.5 py-0.5 rounded bg-blue-50 text-[#0062ff] font-bold">PDF / DOCX / ZIP</span>
+  <span>• Tanpa Ribet</span>
 </div>
+</div>
+
 <!-- Step 2 -->
-<div class="tilt-card stagger-2 bg-white p-5 rounded-2xl border border-[#d2dced] shadow-xs relative z-10 group hover:border-[#0062ff] transition-colors">
+<div class="timeline-step-card stagger-2 relative z-10 group">
 <div class="flex items-center justify-between mb-3">
 <div class="w-8 h-8 rounded-lg bg-[#edf4ff] text-[#0062ff] font-bold text-sm flex items-center justify-center group-hover:scale-110 transition-transform">2</div>
 <span class="material-symbols-outlined text-slate-400 group-hover:text-[#0062ff] transition-colors text-[20px]">forum</span>
 </div>
 <h3 class="font-display text-sm font-bold text-[#08143a]">Diskusi &amp; Deal</h3>
 <p class="text-xs text-[#495874] mt-1">Sepakati fitur teknis dan tenggat deadline aman.</p>
+<div class="flex items-center gap-1.5 mt-3 pt-2.5 border-t border-slate-100 text-[10px] font-code text-slate-500">
+  <span class="px-1.5 py-0.5 rounded bg-blue-50 text-[#0062ff] font-bold">⏱️ Respon &lt; 15 Mnt</span>
+  <span>• Biaya Transparan</span>
 </div>
+</div>
+
 <!-- Step 3 -->
-<div class="tilt-card stagger-3 bg-white p-5 rounded-2xl border border-[#d2dced] shadow-xs relative z-10 group hover:border-[#0062ff] transition-colors">
+<div class="timeline-step-card stagger-3 relative z-10 group">
 <div class="flex items-center justify-between mb-3">
 <div class="w-8 h-8 rounded-lg bg-[#edf4ff] text-[#0062ff] font-bold text-sm flex items-center justify-center group-hover:scale-110 transition-transform">3</div>
 <span class="material-symbols-outlined text-slate-400 group-hover:text-[#0062ff] transition-colors text-[20px]">code</span>
 </div>
 <h3 class="font-display text-sm font-bold text-[#08143a]">Pengerjaan &amp; Update</h3>
 <p class="text-xs text-[#495874] mt-1">Koding rapi dengan progres demo berkala via video/chat.</p>
+<div class="mt-3 pt-2.5 border-t border-slate-100">
+  <div class="flex items-center justify-between text-[10px] font-code text-[#495874] mb-1">
+    <span>git commit: dev</span>
+    <span class="text-emerald-600 font-bold">100% Progres</span>
+  </div>
+  <div class="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
+    <div class="w-full h-full bg-gradient-to-r from-[#0062ff] to-emerald-500 rounded-full"></div>
+  </div>
 </div>
+</div>
+
 <!-- Step 4 -->
-<div class="tilt-card stagger-4 bg-white p-5 rounded-2xl border border-[#d2dced] shadow-xs relative z-10 group hover:border-emerald-500 transition-colors">
+<div class="timeline-step-card stagger-4 relative z-10 group">
 <div class="flex items-center justify-between mb-3">
 <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-bold text-sm flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform">4</div>
 <span class="material-symbols-outlined text-emerald-600 text-[20px]">verified</span>
 </div>
 <h3 class="font-display text-sm font-bold text-[#08143a]">Serah Terima &amp; Mentor</h3>
 <p class="text-xs text-[#495874] mt-1">Source code komplit &amp; sesi bedah koding 1-on-1.</p>
+<div class="flex items-center gap-1.5 mt-3 pt-2.5 border-t border-slate-100 text-[10px] font-code text-slate-500">
+  <span class="px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold">Meet 1-on-1</span>
+  <span class="text-emerald-600 font-bold">• 🏆 ACC Sidang</span>
+</div>
 </div>
 </div>
 </section>
@@ -808,14 +918,25 @@ tailwind.config = {
 </a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-<!-- Project 1 -->
+<!-- Project 1: Wrapped in Desktop Browser Mockup -->
 <div class="tilt-card bg-[#f8faff] rounded-2xl overflow-hidden border border-[#d2dced] shadow-xs hover:-translate-y-1 hover:shadow-lg transition-all flex flex-col justify-between group">
-<div class="p-4 space-y-2.5">
-<div class="h-44 w-full rounded-xl overflow-hidden relative">
-<img alt="POS &amp; Multi-Outlet Inventory System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Vp8NhxU4ZXkuOZm40tpnVnaJU7REsXwd757K4jBzj7yayfAF-CFynG6Y9RlftlGkApxDMndkJV_cy9ugaciJ2QY2NCR_onwOtUBTB16Ae--w23tD_gqdH9YN4zDFAJSCh6OpMGdNRmhCfsnWa-GcE8im-_npWA9bkOT2VRz-IRfWdzspG72XPAjnL6vhazGqwJT8pQCUatLpEjPAp09nD0KDYcWNDEWn5j_qWrLJKJX8CYwS5J49jjl8U"/>
-<div class="absolute top-2.5 left-2.5 bg-[#08143a]/80 backdrop-blur-md px-2 py-0.5 rounded-md text-white text-[10px] font-semibold">
-                Sistem Bisnis
-              </div>
+<div class="p-3.5 space-y-2.5">
+<div class="browser-mockup-frame">
+  <div class="browser-mockup-header">
+    <div class="browser-dots">
+      <span class="browser-dot bg-rose-400"></span>
+      <span class="browser-dot bg-amber-400"></span>
+      <span class="browser-dot bg-emerald-400"></span>
+    </div>
+    <div class="browser-url-bar">
+      <span class="material-symbols-outlined text-[11px] text-emerald-600">lock</span>
+      <span>pos.ciptacoding.id/demo</span>
+    </div>
+    <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800">Sistem Live</span>
+  </div>
+  <div class="h-44 w-full overflow-hidden relative">
+    <img alt="POS &amp; Multi-Outlet Inventory System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Vp8NhxU4ZXkuOZm40tpnVnaJU7REsXwd757K4jBzj7yayfAF-CFynG6Y9RlftlGkApxDMndkJV_cy9ugaciJ2QY2NCR_onwOtUBTB16Ae--w23tD_gqdH9YN4zDFAJSCh6OpMGdNRmhCfsnWa-GcE8im-_npWA9bkOT2VRz-IRfWdzspG72XPAjnL6vhazGqwJT8pQCUatLpEjPAp09nD0KDYcWNDEWn5j_qWrLJKJX8CYwS5J49jjl8U"/>
+  </div>
 </div>
 <h3 class="font-display text-sm font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">POS &amp; Inventory Multi-Cabang</h3>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
@@ -830,14 +951,24 @@ tailwind.config = {
             </span>
 </div>
 </div>
-<!-- Project 2 -->
+<!-- Project 2: Wrapped in Mobile Device Bezel Mockup -->
 <div class="tilt-card bg-[#f8faff] rounded-2xl overflow-hidden border border-[#d2dced] shadow-xs hover:-translate-y-1 hover:shadow-lg transition-all flex flex-col justify-between group">
-<div class="p-4 space-y-2.5">
-<div class="h-44 w-full rounded-xl overflow-hidden relative">
-<img alt="Mobile Presensi GPS &amp; Face Recognition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Xvrtl1Xj5SgJwT_j8O46rWTuIJZ8nzNhWdU5db5y_4Bd7T3JGilU_oWH6ah7fjzP16i2OvyfzY-ud0govG1OsEyD88k4QR7_jBB6mZTmnoTeEPtnC_EZV9Pcc7kkdQPEXZvn5P9ZjNL3y5cJK_BWTHwI8A0BV08Hlqr6y0ZeBS5lE626FMRsXsdHXU8TtUHOj26ck4PuB5GCXeilhqN-eibECQLJSZm3NDkoGOtU_Ji_CdGJjQGJFJ7w"/>
-<div class="absolute top-2.5 left-2.5 bg-[#08143a]/80 backdrop-blur-md px-2 py-0.5 rounded-md text-white text-[10px] font-semibold">
-                Skripsi IT
-              </div>
+<div class="p-3.5 space-y-2.5">
+<div class="browser-mockup-frame">
+  <div class="browser-mockup-header">
+    <div class="flex items-center gap-1 text-[10px] font-bold text-slate-600 font-code">
+      <span>09:41</span>
+    </div>
+    <div class="w-16 h-2.5 bg-slate-200 rounded-full flex items-center justify-center">
+      <div class="w-1.5 h-1.5 rounded-full bg-slate-400"></div>
+    </div>
+    <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5">
+      <span class="material-symbols-outlined text-[11px]">face</span> GPS Lock
+    </span>
+  </div>
+  <div class="h-44 w-full overflow-hidden relative">
+    <img alt="Mobile Presensi GPS &amp; Face Recognition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Xvrtl1Xj5SgJwT_j8O46rWTuIJZ8nzNhWdU5db5y_4Bd7T3JGilU_oWH6ah7fjzP16i2OvyfzY-ud0govG1OsEyD88k4QR7_jBB6mZTmnoTeEPtnC_EZV9Pcc7kkdQPEXZvn5P9ZjNL3y5cJK_BWTHwI8A0BV08Hlqr6y0ZeBS5lE626FMRsXsdHXU8TtUHOj26ck4PuB5GCXeilhqN-eibECQLJSZm3NDkoGOtU_Ji_CdGJjQGJFJ7w"/>
+  </div>
 </div>
 <h3 class="font-display text-sm font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Presensi Face Recognition &amp; GPS</h3>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
@@ -852,14 +983,27 @@ tailwind.config = {
             </span>
 </div>
 </div>
-<!-- Project 3 -->
+<!-- Project 3: Wrapped in Responsive Browser Window Mockup -->
 <div class="tilt-card bg-[#f8faff] rounded-2xl overflow-hidden border border-[#d2dced] shadow-xs hover:-translate-y-1 hover:shadow-lg transition-all flex flex-col justify-between group">
-<div class="p-4 space-y-2.5">
-<div class="h-44 w-full rounded-xl overflow-hidden relative">
-<img alt="Portal Profil &amp; Katalog Ekspor UMKM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKolNbqJUS9Lm1R3ZLED1L42uK0OIt6QHNleiigISQJfwSNDUBceOBDXvqyKtNB51eKEr_RBJIixmH3IF7Y6q80SIrUm-H52xMurBO4ZdcZb5eQk030_hfG4_h-vrwug2hyj2BuSX2vnqJTapODupRYL0cC03djSksv_Qiscra-OX2gqIPZgbg7qAYWSvO28lg32_uP8cbJPGiF2NmmhQxuYLz9hhKzORSpAazf4hxpqwNtYR0rzvB"/>
-<div class="absolute top-2.5 left-2.5 bg-[#08143a]/80 backdrop-blur-md px-2 py-0.5 rounded-md text-white text-[10px] font-semibold">
-                Company Profile
-              </div>
+<div class="p-3.5 space-y-2.5">
+<div class="browser-mockup-frame">
+  <div class="browser-mockup-header">
+    <div class="browser-dots">
+      <span class="browser-dot bg-rose-400"></span>
+      <span class="browser-dot bg-amber-400"></span>
+      <span class="browser-dot bg-emerald-400"></span>
+    </div>
+    <div class="browser-url-bar">
+      <span class="material-symbols-outlined text-[11px] text-emerald-600">lock</span>
+      <span>katalog-ekspor.id</span>
+    </div>
+    <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-blue-100 text-[#0062ff] flex items-center gap-0.5">
+      <span class="material-symbols-outlined text-[11px]">bolt</span> 98
+    </span>
+  </div>
+  <div class="h-44 w-full overflow-hidden relative">
+    <img alt="Portal Profil &amp; Katalog Ekspor UMKM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKolNbqJUS9Lm1R3ZLED1L42uK0OIt6QHNleiigISQJfwSNDUBceOBDXvqyKtNB51eKEr_RBJIixmH3IF7Y6q80SIrUm-H52xMurBO4ZdcZb5eQk030_hfG4_h-vrwug2hyj2BuSX2vnqJTapODupRYL0cC03djSksv_Qiscra-OX2gqIPZgbg7qAYWSvO28lg32_uP8cbJPGiF2NmmhQxuYLz9hhKzORSpAazf4hxpqwNtYR0rzvB"/>
+  </div>
 </div>
 <h3 class="font-display text-sm font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Web Katalog Ekspor &amp; Profil UMKM</h3>
 <div class="flex flex-wrap gap-1 text-[10px] font-code text-[#495874]">
@@ -1018,11 +1162,31 @@ tailwind.config = {
 </section>
 <!-- FINAL CTA BANNER -->
 <section class="reveal-init w-full py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="relative rounded-3xl bg-[#08143a] text-white p-7 sm:p-10 lg:p-12 overflow-hidden shadow-xl border border-[#0a1744] text-center">
+<div class="relative rounded-3xl bg-[#08143a] text-white p-7 sm:p-10 lg:p-14 overflow-hidden shadow-xl border border-[#0a1744] text-center">
+<div class="absolute inset-0 bg-tech-grid opacity-15 pointer-events-none"></div>
 <div class="absolute -right-16 -top-16 w-72 h-72 bg-[#0062ff]/30 rounded-full blur-3xl pointer-events-none"></div>
 <div class="absolute -left-16 -bottom-16 w-72 h-72 bg-[#0062ff]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+<!-- Studio Dev Accents (Floating Desktop) -->
+<div class="hidden md:flex absolute top-6 left-8 items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs text-[11px] text-slate-300 font-mono shadow-xs">
+  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+  <span class="text-blue-300">git</span> checkout -b feature/success
+</div>
+<div class="hidden md:flex absolute top-6 right-8 items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs text-[11px] text-slate-300 font-mono shadow-xs">
+  <span class="material-symbols-outlined text-[14px] text-emerald-400">verified</span>
+  <span>Build Status: Passing</span>
+</div>
+<div class="hidden lg:flex absolute bottom-6 left-8 items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs text-[11px] text-slate-300 shadow-xs">
+  <span class="material-symbols-outlined text-[14px] text-blue-400">terminal</span>
+  <span class="font-mono text-slate-400">npm run deploy --prod</span>
+</div>
+<div class="hidden lg:flex absolute bottom-6 right-8 items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs text-[11px] text-slate-300 shadow-xs">
+  <span class="material-symbols-outlined text-[14px] text-indigo-300">lock</span>
+  <span>100% Rahasia &amp; Garansi Revisi</span>
+</div>
+
 <div class="relative z-10 max-w-2xl mx-auto space-y-4">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-slate-200 text-xs font-semibold">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-slate-200 text-xs font-semibold backdrop-blur-xs">
 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
 <span>Senior Engineer Standby WhatsApp</span>
 </div>

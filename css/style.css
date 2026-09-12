@@ -430,6 +430,100 @@ header.navbar-scrolled {
   transform: scale(0.96);
 }
 
+/* ==========================================================================
+   DEVELOPMENT STUDIO MOCKUP & TIMELINE UTILITIES
+   ========================================================================== */
+.browser-mockup-frame {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(210, 220, 237, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(8, 20, 58, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #ffffff;
+}
+
+.browser-mockup-frame:hover {
+  border-color: rgba(0, 98, 255, 0.5);
+  box-shadow: 0 16px 36px -10px rgba(0, 98, 255, 0.16);
+}
+
+.browser-mockup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: #f8faff;
+  border-bottom: 1px solid rgba(210, 220, 237, 0.7);
+}
+
+.browser-dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.browser-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+.browser-url-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  background: #ffffff;
+  border: 1px solid rgba(210, 220, 237, 0.6);
+  border-radius: 0.375rem;
+  font-family: var(--font-code);
+  font-size: 0.625rem;
+  color: #495874;
+  max-width: 60%;
+}
+
+.terminal-mini-box {
+  background: #08143a;
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-code);
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.terminal-mini-box:hover {
+  border-color: rgba(0, 98, 255, 0.6);
+  box-shadow: 0 8px 24px -6px rgba(0, 98, 255, 0.25);
+}
+
+.timeline-step-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d2dced;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-step-card:hover {
+  transform: translateY(-3px);
+  border-color: #0062ff;
+  box-shadow: 0 12px 28px -6px rgba(0, 98, 255, 0.12);
+}
+
+@keyframes timeline-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.timeline-connector-glow {
+  animation: timeline-pulse 3s ease-in-out infinite;
+}
+
 /* Accessibility: Respect Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
