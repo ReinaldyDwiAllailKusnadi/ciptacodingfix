@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Galeri Portofolio & Studi Kasus Riil - CiptaCoding - CiptaCoding</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            navy: "#08143a",
+            dark: "#0a1744",
+            blue: "#0062ff",
+            hover: "#0051d4",
+            light: "#edf4ff",
+            subtle: "#f3f7fd"
+          },
+          primary: "#0062ff",
+          "primary-container": "#0062ff",
+          "on-primary": "#ffffff",
+          surface: "#f8faff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f1f5fb",
+          "surface-container": "#e8eef8",
+          "surface-container-high": "#dbe5f5",
+          "on-surface": "#08143a",
+          "on-surface-variant": "#495874",
+          "outline-variant": "#d2dced",
+          "inverse-surface": "#08143a",
+          "inverse-on-surface": "#f1f5fb"
+        },
+        fontFamily: {
+          body: ["Plus Jakarta Sans", "sans-serif"],
+          display: ["Plus Jakarta Sans", "sans-serif"],
+          code: ["JetBrains Mono", "monospace"]
+        }
+      }
+    }
+  };
+  </script>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#f8faff] font-body text-[#08143a] antialiased min-h-screen flex flex-col justify-between selection:bg-[#0062ff] selection:text-white relative">
+
+<!-- Top Bar Promosi / Announcement (Master dari Beranda) -->
+<div class="w-full bg-[#08143a] text-white py-2 px-4 text-center text-xs font-semibold flex items-center justify-center gap-2 border-b border-[#0a1744] shadow-sm z-50 relative">
+  <div class="flex flex-wrap items-center justify-center gap-2 max-w-7xl mx-auto">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#0062ff]/20 text-[#60a5fa] border border-[#0062ff]/30 text-[11px]">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+      </span>
+      WhatsApp Fast Response &lt; 10 Menit
+    </span>
+    <span class="text-slate-200">Mitra Solusi Coding &amp; Pembuatan Website Terpercaya 2.500+ Klien &amp; Mahasiswa | IG: <a class="underline font-bold text-[#60a5fa] hover:text-white transition-colors" href="https://instagram.com/ciptacoding" rel="noopener noreferrer" target="_blank">@ciptacoding</a></span>
+  </div>
+</div>
+
+<!-- HEADER / NAVBAR (Master dari Beranda dengan micro-interactions) -->
+<header id="main-header" class="sticky top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#d2dced]/70 shadow-[0_2px_12px_rgba(8,20,58,0.04)] transition-all duration-300">
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+    <!-- Brand Logo Sesuai Template Resmi CiptaCoding -->
+    <a class="flex items-center gap-3 focus:outline-none group" href="index.html">
+      <img alt="Logo CiptaCoding" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3JvyuPHO0m1YFnLUOhlaagbNn64nXerWaYsbhW6oQWc76l4TKO8ZAJ_4MnVo9ji_iuwayzuiZJDK4ktkbJWVr0iNB-IbU-PCql0cm1HLyKN3su0Sta-C0x69hYGI23ZZKt98V7HAg_QFP9czl5IXAtAEfHA8IHTXkOc6dQvuVqYAnrN3yy_p_BnUPLFD3p99TxYGZyuTX0BGx6K_4Xq952rIb-FLAVws_Cnde4t-hIMeSKsAkdC_uGj9NxF-kYMw1gw"/>
+      <span class="font-display text-xl sm:text-2xl text-[#08143a] font-extrabold tracking-tight">Cipta<span class="text-[#0062ff]">Coding</span></span>
+    </a>
+    <!-- Nav Links Desktop (5 Menu) -->
+    <nav class="hidden lg:flex items-center gap-5">
+      <a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="index.html">Beranda</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="layanan.html">Layanan</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="cara-order.html">Cara Order</a><a class="relative text-sm font-bold text-[#0062ff] bg-[#edf4ff] px-3.5 py-1.5 rounded-xl transition-all shadow-2xs" href="portofolio.html">Portofolio</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="tanya-jawab.html">Tanya Jawab</a>
+    </nav>
+    <!-- Nav Action CTA (Tanpa Icon Instagram) -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a class="btn-shimmer btn-hover-lift inline-flex items-center gap-2 bg-[#0062ff] text-white hover:bg-[#0051d4] font-semibold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-[0.98] animate-pulse-glow group" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20kebutuhan%20coding%20di%20CiptaCoding" rel="noopener noreferrer" target="_blank">
+        <span>Konsultasi Gratis</span>
+        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">chat</span>
+      </a>
+      <!-- Hamburger button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff] rounded-xl transition-colors focus:outline-none" aria-label="Buka Menu Navigasi">
+        <span class="material-symbols-outlined text-[26px]">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-[#d2dced] px-4 pt-3 pb-6 space-y-2 shadow-xl">
+    <a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="index.html">Beranda</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="layanan.html">Layanan</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="cara-order.html">Cara Order</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-bold bg-[#edf4ff] text-[#0062ff]" href="portofolio.html">Portofolio</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="tanya-jawab.html">Tanya Jawab</a>
+    <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+      <a class="btn-shimmer w-full flex items-center justify-center gap-2 bg-[#0062ff] text-white py-3 rounded-xl font-bold text-sm shadow-md" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20kebutuhan%20coding%20di%20CiptaCoding" target="_blank">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>Konsultasi Cepat via WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<main class="w-full flex-grow relative overflow-hidden">
+  <!-- Subtle Background Glows -->
+  <div class="absolute -top-16 -left-20 w-96 h-96 bg-[#0062ff]/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute top-1/3 -right-20 w-96 h-96 bg-[#08143a]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- HERO SECTION PORTOFOLIO -->
+  <section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8 bg-tech-grid">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+      <div class="max-w-2xl space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#d2dced] shadow-xs text-xs font-semibold text-[#08143a]">
+          <span class="material-symbols-outlined text-[16px] text-[#0062ff] icon-pop" style="font-variation-settings: 'FILL' 1;">verified</span>
+          <span class="text-[#0062ff] font-bold">Rekam Jejak Teruji &amp; Terpercaya</span>
+          <span class="text-slate-300">•</span>
+          <span class="text-[#495874]">Karya Riil Mahasiswa &amp; UMKM</span>
+        </div>
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-[#08143a] tracking-tight leading-[1.18]">
+          Galeri Portofolio &amp; <span class="text-[#0062ff]">Studi Kasus Riil.</span>
+        </h1>
+        <p class="text-[#495874] text-base sm:text-lg leading-relaxed">
+          Dari aplikasi skripsi tingkat akhir bernilai A hingga sistem otomasi operasional bisnis yang aktif digunakan di lapangan setiap hari.
+        </p>
+      </div>
+
+      <!-- Metric Counter Pills -->
+      <div class="flex items-center gap-3 p-2 bg-white rounded-2xl border border-[#d2dced] shadow-xs shrink-0">
+        <div class="flex items-center gap-3 px-4 py-2 border-r border-slate-100">
+          <span class="font-display text-2xl sm:text-3xl font-extrabold text-[#0062ff] counter-number" data-target="120" data-suffix="+">120+</span>
+          <div class="flex flex-col">
+            <span class="text-xs font-bold text-[#08143a]">Skripsi &amp; TA</span>
+            <span class="text-[11px] text-[#495874]">Lulus Sidang A</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 px-4 py-2">
+          <span class="font-display text-2xl sm:text-3xl font-extrabold text-emerald-600 counter-number" data-target="45" data-suffix="+">45+</span>
+          <div class="flex flex-col">
+            <span class="text-xs font-bold text-[#08143a]">Sistem Bisnis</span>
+            <span class="text-[11px] text-[#495874]">Live Operasional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Tabs Interactive -->
+    <div class="flex flex-wrap items-center gap-2 p-1.5 bg-white border border-[#d2dced] rounded-2xl w-fit shadow-xs mb-8" id="portfolio-filter-container">
+      <button class="filter-btn active-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-[#0062ff] text-white shadow-xs btn-hover-lift" data-filter="all" type="button">
+        Semua Proyek (6)
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-[#495874] hover:text-[#08143a] hover:bg-slate-50 btn-hover-lift" data-filter="skripsi" type="button">
+        Skripsi &amp; TA
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-[#495874] hover:text-[#08143a] hover:bg-slate-50 btn-hover-lift" data-filter="bisnis" type="button">
+        Sistem Bisnis &amp; POS
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-[#495874] hover:text-[#08143a] hover:bg-slate-50 btn-hover-lift" data-filter="mobile" type="button">
+        Mobile App
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-[#495874] hover:text-[#08143a] hover:bg-slate-50 btn-hover-lift" data-filter="website" type="button">
+        Website Profil
+      </button>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="portfolio-grid">
+      <!-- Project 1: POS & Multi-Outlet System -->
+      <article class="portfolio-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs hover:border-[#0062ff] hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group stagger-1" data-category="bisnis">
+        <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+          <img alt="POS Multi-Outlet Retail Coffee Shop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Vp8NhxU4ZXkuOZm40tpnVnaJU7REsXwd757K4jBzj7yayfAF-CFynG6Y9RlftlGkApxDMndkJV_cy9ugaciJ2QY2NCR_onwOtUBTB16Ae--w23tD_gqdH9YN4zDFAJSCh6OpMGdNRmhCfsnWa-GcE8im-_npWA9bkOT2VRz-IRfWdzspG72XPAjnL6vhazGqwJT8pQCUatLpEjPAp09nD0KDYcWNDEWn5j_qWrLJKJX8CYwS5J49jjl8U"/>
+          <div class="absolute top-3 left-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 backdrop-blur text-[#0062ff] text-xs font-bold rounded-lg shadow-xs">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Aktif Digunakan Usaha
+            </span>
+          </div>
+          <div class="absolute bottom-3 right-3">
+            <span class="px-2.5 py-1 bg-[#08143a]/85 backdrop-blur text-white font-mono text-[11px] rounded-md">
+              Live POS Cashier
+            </span>
+          </div>
+        </div>
+        <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs text-[#495874]">
+              <span>Kategori: Sistem Retail &amp; F&amp;B</span>
+              <span class="font-mono text-[#0062ff] font-bold">PRJ-POS-01</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors leading-snug">
+              POS &amp; Multi-Outlet Inventory System
+            </h2>
+            <p class="text-xs sm:text-sm text-[#495874] leading-relaxed">
+              Otomatisasi pencatatan kasir instan, integrasi printer thermal bluetooth, sinkronisasi stok resep beans bahan baku terpotong per invoice pesanan.
+            </p>
+          </div>
+          <div class="space-y-3 pt-3 border-t border-slate-100">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Laravel 11</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">MySQL</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Tailwind CSS</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Thermal Print</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-[#495874] pt-1">
+              <span class="flex items-center gap-1 font-semibold text-emerald-600">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span> 3 Cabang Sinkron
+              </span>
+              <a class="text-[#0062ff] hover:underline font-bold flex items-center gap-0.5" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20tertarik%20dengan%20sistem%20POS%20Multi-Outlet" rel="noopener noreferrer" target="_blank">
+                Tanya Spek <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Mobile Presensi GPS & Face Recognition -->
+      <article class="portfolio-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs hover:border-[#0062ff] hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group stagger-2" data-category="skripsi mobile">
+        <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+          <img alt="Mobile Presensi GPS &amp; Face Recognition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Xvrtl1Xj5SgJwT_j8O46rWTuIJZ8nzNhWdU5db5y_4Bd7T3JGilU_oWH6ah7fjzP16i2OvyfzY-ud0govG1OsEyD88k4QR7_jBB6mZTmnoTeEPtnC_EZV9Pcc7kkdQPEXZvn5P9ZjNL3y5cJK_BWTHwI8A0BV08Hlqr6y0ZeBS5lE626FMRsXsdHXU8TtUHOj26ck4PuB5GCXeilhqN-eibECQLJSZm3NDkoGOtU_Ji_CdGJjQGJFJ7w"/>
+          <div class="absolute top-3 left-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 backdrop-blur text-[#0062ff] text-xs font-bold rounded-lg shadow-xs">
+              <span class="material-symbols-outlined text-[14px] text-[#0062ff]" style="font-variation-settings: 'FILL' 1;">school</span>
+              Lulus Sidang Nilai A
+            </span>
+          </div>
+          <div class="absolute bottom-3 right-3">
+            <span class="px-2.5 py-1 bg-[#08143a]/85 backdrop-blur text-white font-mono text-[11px] rounded-md">
+              Mobile &amp; Geofencing
+            </span>
+          </div>
+        </div>
+        <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs text-[#495874]">
+              <span>Kategori: Skripsi Teknik Informatika</span>
+              <span class="font-mono text-[#0062ff] font-bold">SKR-MBL-02</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors leading-snug">
+              Mobile Presensi GPS &amp; Face Recognition
+            </h2>
+            <p class="text-xs sm:text-sm text-[#495874] leading-relaxed">
+              Aplikasi absensi lapangan dengan validasi koordinat Haversine formula anti fake GPS serta verifikasi biometrik wajah berbasis OpenCV real-time.
+            </p>
+          </div>
+          <div class="space-y-3 pt-3 border-t border-slate-100">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Flutter</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Flask Python</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">OpenCV</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Maps API</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-[#495874] pt-1">
+              <span class="flex items-center gap-1 font-semibold text-emerald-600">
+                <span class="material-symbols-outlined text-[16px]">verified</span> Nilai A &amp; Lolos Revisi
+              </span>
+              <a class="text-[#0062ff] hover:underline font-bold flex items-center gap-0.5" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20tertarik%20konsultasi%20skripsi%20serupa%20Presensi%20GPS%20Face%20Recognition" rel="noopener noreferrer" target="_blank">
+                Diskusi Ide <span class="material-symbols-outlined text-[16px] icon-glide">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Portal Profil & Katalog Ekspor UMKM -->
+      <article class="portfolio-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs hover:border-[#0062ff] hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group stagger-3" data-category="website bisnis">
+        <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+          <img alt="Portal Profil &amp; Katalog Ekspor UMKM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO6p6MKfqfkvxtU7ypCqZcGsktoK_t6BFnewyx2n3ufG5-i3_EImwsJLs7nqO5FkimMtZHz0gNwEnd6VNisyCe1errN2c4l3KmleKE89xAVNpy-KYZr_fV0LccIAv6O-ootiYrrGAWWv5vQZXE72-3GuClEfj-ttHkPzY1npuKkvxdaaC_QhPJt1lTeATWztiLsaENtI4E_LzVXCnio6t6tkL0t8YdcYAdJ9JIUBAm3biM55dQolGd"/>
+          <div class="absolute top-3 left-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 backdrop-blur text-[#0062ff] text-xs font-bold rounded-lg shadow-xs">
+              <span class="material-symbols-outlined text-[14px] text-[#0062ff]">speed</span>
+              SEO Score 98/100
+            </span>
+          </div>
+          <div class="absolute bottom-3 right-3">
+            <span class="px-2.5 py-1 bg-[#08143a]/85 backdrop-blur text-white font-mono text-[11px] rounded-md">
+              Bilingual ID / EN
+            </span>
+          </div>
+        </div>
+        <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs text-[#495874]">
+              <span>Kategori: Portal Bisnis UMKM</span>
+              <span class="font-mono text-[#0062ff] font-bold">WEB-EXP-03</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors leading-snug">
+              Portal Profil &amp; Katalog Ekspor UMKM
+            </h2>
+            <p class="text-xs sm:text-sm text-[#495874] leading-relaxed">
+              Web showcase interaktif komoditas ekspor kerajinan &amp; rempah nusantara dengan integrasi WhatsApp Direct Order, multi-language, dan performa cepat.
+            </p>
+          </div>
+          <div class="space-y-3 pt-3 border-t border-slate-100">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Next.js 14</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Tailwind CSS</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">i18n Multi-lang</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Vercel Edge</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-[#495874] pt-1">
+              <span class="flex items-center gap-1 font-semibold text-emerald-600">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span> Akses Global Cepat
+              </span>
+              <a class="text-[#0062ff] hover:underline font-bold flex items-center gap-0.5" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20tertarik%20bikin%20website%20katalog%20ekspor" rel="noopener noreferrer" target="_blank">
+                Konsultasi <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: SPK TOPSIS & SAW -->
+      <article class="portfolio-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs hover:border-[#0062ff] hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group stagger-4" data-category="skripsi">
+        <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+          <img alt="SPK Rekomendasi Beasiswa TOPSIS &amp; SAW" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZdg6PLPzsiprjTgimjavMf9-xan4WVLa5JEsiSDWrIDgFhGTtSo7xC1E-fG44bVR4V0O1H_jL9lNl7d_Sftr0zkg1db7MUJpw2bBG7NIXBHzLEv4JzCxN3RXpPTyhry7IpZHouH8-vKgY8stQX8HMfyAmgA2xXMq-o1tYjpx5Dz96heKl9aHvN9hGrwovj0WibKSeKnbi1GPcPDTVq4Ju0nv8Ki8tj9yW7zzySxbehuf7hD3PSzyF"/>
+          <div class="absolute top-3 left-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 backdrop-blur text-[#0062ff] text-xs font-bold rounded-lg shadow-xs">
+              <span class="material-symbols-outlined text-[14px] text-[#0062ff]">calculate</span>
+              Akurasi Matriks 100%
+            </span>
+          </div>
+          <div class="absolute bottom-3 right-3">
+            <span class="px-2.5 py-1 bg-[#08143a]/85 backdrop-blur text-white font-mono text-[11px] rounded-md">
+              Dual Metrik Komparasi
+            </span>
+          </div>
+        </div>
+        <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs text-[#495874]">
+              <span>Kategori: Skripsi Sistem Informasi</span>
+              <span class="font-mono text-[#0062ff] font-bold">SKR-SPK-04</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors leading-snug">
+              SPK Rekomendasi Beasiswa TOPSIS &amp; SAW
+            </h2>
+            <p class="text-xs sm:text-sm text-[#495874] leading-relaxed">
+              Sistem pendukung keputusan dengan perbandingan dua algoritma pembobotan kriteria, tabel normalisasi dinamis, dan ekspor laporan PDF hasil sidang.
+            </p>
+          </div>
+          <div class="space-y-3 pt-3 border-t border-slate-100">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">PHP Native</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Bootstrap 5</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">MySQL</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">FPDF Library</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-[#495874] pt-1">
+              <span class="flex items-center gap-1 font-semibold text-emerald-600">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span> Source Code Bersih
+              </span>
+              <a class="text-[#0062ff] hover:underline font-bold flex items-center gap-0.5" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20butuh%20bimbingan%20skripsi%20SPK%20TOPSIS/SAW" rel="noopener noreferrer" target="_blank">
+                Bimbingan <span class="material-symbols-outlined text-[16px] icon-glide">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5: Marketplace Produk Digital & Payment Gateway -->
+      <article class="portfolio-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs hover:border-[#0062ff] hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group stagger-5" data-category="bisnis website">
+        <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+          <img alt="Marketplace Produk Digital &amp; Payment Gateway" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-yiLCtfg7BYBHN8rxDyggfQIDZ7T8Xspm_r6GdAtn8aTIrAPI-m5X8P4a4yH_Q6W5IHFjcXf_Rm1fPjh5BYlYaNq8YKT2jCSf0TorJGpv2YQao76yo98R4qAUHw7IqWnoutUCn0Pspq0mKIGuHKA-ctMTwdnJXc7xVNB9HtdzrP1h6DiPpuALN10D_oJQKDpdgDcOWeqamzxMt_sZT-2tA_t7BGsML9VL_rwZyLakd4kn04k4slFs"/>
+          <div class="absolute top-3 left-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 backdrop-blur text-[#0062ff] text-xs font-bold rounded-lg shadow-xs">
+              <span class="material-symbols-outlined text-[14px] text-[#0062ff]">payments</span>
+              Midtrans Snap Autocheck
+            </span>
+          </div>
+          <div class="absolute bottom-3 right-3">
+            <span class="px-2.5 py-1 bg-[#08143a]/85 backdrop-blur text-white font-mono text-[11px] rounded-md">
+              Instant Download Secure
+            </span>
+          </div>
+        </div>
+        <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs text-[#495874]">
+              <span>Kategori: Proyek Startup Digital</span>
+              <span class="font-mono text-[#0062ff] font-bold">MKT-DIG-05</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors leading-snug">
+              Marketplace Produk Digital &amp; Payment Gateway
+            </h2>
+            <p class="text-xs sm:text-sm text-[#495874] leading-relaxed">
+              Platform transaksi e-course dan aset desain dengan verifikasi webhook otomatis, pengiriman file via encrypted token link, dan dashboard mitra vendor.
+            </p>
+          </div>
+          <div class="space-y-3 pt-3 border-t border-slate-100">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">React.js</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Node / Express</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">MongoDB</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Midtrans</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-[#495874] pt-1">
+              <span class="flex items-center gap-1 font-semibold text-emerald-600">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span> Auto Webhook QRIS
+              </span>
+              <a class="text-[#0062ff] hover:underline font-bold flex items-center gap-0.5" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20ingin%20buat%20aplikasi%20marketplace%20payment%20gateway" rel="noopener noreferrer" target="_blank">
+                Tanya Proyek <span class="material-symbols-outlined text-[16px] icon-glide">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6: Deteksi Penyakit Daun CNN -->
+      <article class="portfolio-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs hover:border-[#0062ff] hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group stagger-6" data-category="skripsi">
+        <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+          <img alt="Deteksi Penyakit Daun CNN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqC2PZkbJ_6dvAyDisWX2p8AVoncPhp5XavLc-TDayvTEtDSzRtmBnyAzYoE7XhjQ7qe5Tmpz7HaCop4Pwpt1a1pkHnDqK4Z7jVDB6lMzv88ABCLuTdGy8KVwYD7Gjv1bhgIDCucYPkPmhoDI7wk4qFw_-2XXAmBqt0Gmprc-1qCK39LB8Tv30J1PKm0vs6WQPoTJWtUtB8xa3KtEYVcJedXqb77aaKgIPRYBAGWPbCFWE8f4M6W_F"/>
+          <div class="absolute top-3 left-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 backdrop-blur text-[#0062ff] text-xs font-bold rounded-lg shadow-xs">
+              <span class="material-symbols-outlined text-[14px] text-[#0062ff]">psychology</span>
+              Akurasi Model 96.4%
+            </span>
+          </div>
+          <div class="absolute bottom-3 right-3">
+            <span class="px-2.5 py-1 bg-[#08143a]/85 backdrop-blur text-white font-mono text-[11px] rounded-md">
+              ResNet-50 Fine-tuned
+            </span>
+          </div>
+        </div>
+        <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs text-[#495874]">
+              <span>Kategori: Skripsi AI &amp; Computer Vision</span>
+              <span class="font-mono text-[#0062ff] font-bold">SKR-AI-06</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors leading-snug">
+              Deteksi Penyakit Daun Tanaman dengan CNN
+            </h2>
+            <p class="text-xs sm:text-sm text-[#495874] leading-relaxed">
+              Model klasifikasi citra daun tanaman pangan menggunakan Convolutional Neural Network lengkap dengan Confusion Matrix, kurva loss, dan demo UI interaktif.
+            </p>
+          </div>
+          <div class="space-y-3 pt-3 border-t border-slate-100">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Python</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">PyTorch</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Streamlit</span>
+              <span class="px-2 py-0.5 rounded-md bg-[#edf4ff] text-[#0062ff] font-mono text-[11px] font-semibold">Notebook</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-[#495874] pt-1">
+              <span class="flex items-center gap-1 font-semibold text-emerald-600">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span> Termasuk Penjelasan Bab 4
+              </span>
+              <a class="text-[#0062ff] hover:underline font-bold flex items-center gap-0.5" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20butuh%20bimbingan%20skripsi%20AI%20Deep%20Learning%20CNN" rel="noopener noreferrer" target="_blank">
+                Tanya AI <span class="material-symbols-outlined text-[16px] icon-glide">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TECHNICAL DEPTH & CLEAN ARCHITECTURE CALLOUT SECTION (MASTER DEEP NAVY) -->
+  <section class="w-full py-14 lg:py-20 bg-[#08143a] text-white relative overflow-hidden my-10 bg-tech-grid">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#0062ff]/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-cyan-300 text-xs font-bold tracking-wide">
+            <span class="material-symbols-outlined text-[16px]">terminal</span>
+            <span>KUALITAS KODE &amp; STANDAR SIDANG</span>
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            Bukan Sekadar Jalan, Kode Kami <span class="text-cyan-400">Rapi &amp; Siap Dipertanggungjawabkan</span>
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Setiap baris kode yang kami serahkan disertai komentar penjelasan fungsi berbahasa Indonesia, struktur database ternormalisasi (3NF), serta dokumentasi alur sistem yang memudahkan Anda saat ditanya dosen penguji atau mengoperasikan bisnis mandiri.
+          </p>
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10 tilt-card">
+              <span class="font-display text-2xl font-extrabold text-cyan-400">100%</span>
+              <p class="text-xs text-slate-300 font-semibold mt-0.5">Bebas Plagiarisme Kode</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10 tilt-card">
+              <span class="font-display text-2xl font-extrabold text-emerald-400">Free</span>
+              <p class="text-xs text-slate-300 font-semibold mt-0.5">Panduan Instalasi &amp; Video</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Architecture Diagram & Code Card with Tab Switcher -->
+        <div class="lg:col-span-6">
+          <div class="rounded-2xl bg-[#0d1c3a] p-5 border border-white/10 shadow-2xl flex flex-col gap-3 font-mono text-xs">
+            <div class="flex items-center justify-between pb-3 border-b border-white/10">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                <div class="flex items-center gap-1.5 ml-2">
+                  <button id="codeTabPhp" onclick="switchCodeTab('php')" class="px-2.5 py-1 rounded-md bg-white/15 text-white font-mono text-[11px] font-bold transition-all">CiptaCoding_Standards.php</button>
+                  <button id="codeTabSql" onclick="switchCodeTab('sql')" class="px-2.5 py-1 rounded-md bg-transparent text-slate-400 font-mono text-[11px] hover:text-white transition-all">Database_Schema_3NF.sql</button>
+                </div>
+              </div>
+              <span class="text-cyan-400 font-bold text-[11px]" id="codeBadge">PSR-12 Clean Code</span>
+            </div>
+
+            <!-- Tab PHP Content -->
+            <div id="codeContentPhp" class="text-slate-200 leading-relaxed overflow-x-auto py-2 space-y-1.5 transition-all">
+              <p class="text-slate-500">// Standar modular, scalable, siap ditanyakan penguji</p>
+              <p><span class="text-cyan-400 font-semibold">class</span> <span class="text-white font-bold">TransactionController</span> <span class="text-cyan-400 font-semibold">extends</span> BaseController &#123;</p>
+              <p class="pl-4 text-slate-500">/** Logika transaksi atomic &amp; auto-stock deduction **/</p>
+              <p class="pl-4"><span class="text-sky-400">public function</span> <span class="text-emerald-400">checkoutCart</span>(TransactionRequest $request): JsonResponse &#123;</p>
+              <p class="pl-8"><span class="text-cyan-400 font-semibold">return</span> DB::transaction(<span class="text-sky-400">function</span> () <span class="text-cyan-400 font-semibold">use</span> ($request) &#123;</p>
+              <p class="pl-12 text-slate-300">$order = <span class="text-sky-300">$this</span>-&gt;orderService-&gt;process($request-&gt;validated());</p>
+              <p class="pl-12 text-slate-500">// Cetak struk printer Bluetooth thermal POS</p>
+              <p class="pl-12 text-slate-300"><span class="text-sky-300">$this</span>-&gt;printerService-&gt;dispatchReceipt($order);</p>
+              <p class="pl-12 text-cyan-400">return response()-&gt;json(['status' =&gt; 'SUCCESS', 'data' =&gt; $order]);</p>
+              <p class="pl-8">&#125;);</p>
+              <p class="pl-4">&#125;</p>
+              <p>&#125;</p>
+            </div>
+
+            <!-- Tab SQL Content -->
+            <div id="codeContentSql" class="hidden text-slate-200 leading-relaxed overflow-x-auto py-2 space-y-1.5 transition-all">
+              <p class="text-slate-500">-- Struktur Database Normalisasi Ketiga (3NF)</p>
+              <p><span class="text-sky-400 font-semibold">CREATE TABLE</span> <span class="text-emerald-400 font-bold">orders</span> (</p>
+              <p class="pl-4"><span class="text-slate-300">id</span> <span class="text-cyan-400">BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY</span>,</p>
+              <p class="pl-4"><span class="text-slate-300">invoice_code</span> <span class="text-cyan-400">VARCHAR(32) NOT NULL UNIQUE</span>,</p>
+              <p class="pl-4"><span class="text-slate-300">total_amount</span> <span class="text-cyan-400">DECIMAL(12,2) NOT NULL</span>,</p>
+              <p class="pl-4"><span class="text-slate-300">payment_status</span> <span class="text-cyan-400">ENUM('pending','paid','failed') DEFAULT 'pending'</span>,</p>
+              <p class="pl-4"><span class="text-slate-300">created_at</span> <span class="text-cyan-400">TIMESTAMP DEFAULT CURRENT_TIMESTAMP</span></p>
+              <p>);</p>
+              <p class="text-slate-500">-- Foreign key cascade aman untuk integritas data referensial</p>
+            </div>
+
+            <div class="flex items-center justify-between text-slate-400 text-[11px] pt-3 border-t border-white/10">
+              <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-emerald-400">security</span> Prepared Statements &amp; Safe Queries</span>
+              <span class="text-cyan-400 font-semibold">Ready for Academic Review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHENTIC TESTIMONIALS SECTION -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
+      <span class="text-[11px] uppercase font-extrabold tracking-widest text-[#0062ff] bg-[#edf4ff] px-3.5 py-1 rounded-full border border-[#0062ff]/20">Testimoni Nyata</span>
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-[#08143a] tracking-tight">
+        Cerita Sukses Bersama CiptaCoding
+      </h2>
+      <p class="text-xs sm:text-sm text-[#495874]">
+        Kepuasan dan kelancaran Anda dalam menghadapi sidang maupun operasional bisnis adalah prioritas kami.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Testimonial 1 -->
+      <div class="tilt-card bg-white p-6 rounded-2xl border border-[#d2dced] shadow-xs flex flex-col justify-between gap-4 stagger-1">
+        <div class="space-y-3">
+          <div class="flex text-amber-400 gap-1 icon-pop">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#08143a] leading-relaxed italic">
+            "Jujur awalnya panik banget revisian dosen pembimbing minta ganti algoritma deteksi wajah ke Flask dan Flutter. Tim CiptaCoding bantuin restrukturisasi kode dan bimbingan via Google Meet sampe saya bener-bener paham alur kodenya pas sidang. Hasilnya dapet nilai A!"
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+          <div class="w-10 h-10 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold flex items-center justify-center text-xs">
+            RA
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xs font-bold text-[#08143a]">Rizky Ananda</span>
+            <span class="text-[11px] text-[#495874]">Mahasiswa TI Universitas Swasta Bandung</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="tilt-card bg-white p-6 rounded-2xl border border-[#d2dced] shadow-xs flex flex-col justify-between gap-4 stagger-2">
+        <div class="space-y-3">
+          <div class="flex text-amber-400 gap-1 icon-pop">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#08143a] leading-relaxed italic">
+            "Aplikasi POS kasir untuk coffee shop kami sangat stabil. Fitur printer bluetooth dan resep bahan baku langsung ngurangin selisih stok beans di bar. Supportnya cepat dan komunikatif kalau ada penyesuaian menu baru."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+          <div class="w-10 h-10 rounded-full bg-slate-100 text-[#08143a] font-bold flex items-center justify-center text-xs">
+            BP
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xs font-bold text-[#08143a]">Budi Pratama</span>
+            <span class="text-[11px] text-[#495874]">Founder Kopi Kita Roastery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="tilt-card bg-white p-6 rounded-2xl border border-[#d2dced] shadow-xs flex flex-col justify-between gap-4 stagger-3">
+        <div class="space-y-3">
+          <div class="flex text-amber-400 gap-1 icon-pop">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#08143a] leading-relaxed italic">
+            "Skripsi SPK SAW dan TOPSIS saya selesai tepat waktu sebelum batas akhir yudisium. Penjelasan matriks normalisasinya detail banget di video rekaman penjelasan yang dikasih. Terima kasih banyak mas engineer CiptaCoding!"
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+          <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 font-bold flex items-center justify-center text-xs">
+            DW
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xs font-bold text-[#08143a]">Dinda Wulandari</span>
+            <span class="text-[11px] text-[#495874]">Mahasiswi Sistem Informasi Jakarta</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instagram Showcase Card -->
+    <div class="mt-8 p-5 sm:p-6 bg-white rounded-2xl border border-[#d2dced] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-[#edf4ff] text-[#0062ff] flex items-center justify-center shrink-0 icon-pop">
+          <span class="material-symbols-outlined text-[28px]">photo_camera</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display text-sm sm:text-base font-bold text-[#08143a]">Ingin Melihat Cuplikan Sidang &amp; Demo Sistem Lebih Banyak?</span>
+          <span class="text-xs text-[#495874]">Kami rutin membagikan reels proses pengerjaan, rekaman demo aplikasi, dan tips lolos sidang di Instagram resmi.</span>
+        </div>
+      </div>
+      <a class="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-50 hover:bg-[#edf4ff] text-[#08143a] hover:text-[#0062ff] text-xs sm:text-sm font-bold rounded-xl border border-[#d2dced] hover:border-[#0062ff] transition-all whitespace-nowrap shrink-0 btn-hover-lift" href="https://instagram.com/ciptacoding" rel="noopener noreferrer" target="_blank">
+        <span class="material-symbols-outlined text-[18px] text-[#0062ff]">alternate_email</span>
+        <span>Buka Instagram @ciptacoding</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- BOTTOM CONSULTATION CTA BANNER -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#0062ff] to-[#004bd2] text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
+      <div class="absolute -right-16 -bottom-16 w-80 h-80 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="space-y-3 max-w-2xl relative z-10 text-center lg:text-left">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-sky-200">KONSULTASI TANPA BIAYA</span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+          Ingin Bangun Project atau Skripsi Serupa?
+        </h2>
+        <p class="text-sky-100 text-xs sm:text-sm leading-relaxed">
+          Diskusikan topik, rancangan database, atau kebutuhan fungsional aplikasi Anda langsung dengan tim software engineer kami. Kami siap mendampingi hingga tuntas.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center gap-3 relative z-10 w-full sm:w-auto shrink-0">
+        <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white hover:bg-slate-50 text-[#08143a] font-bold text-xs sm:text-sm rounded-xl shadow-md transition-all btn-shimmer btn-hover-lift" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20ingin%20konsultasi%20project%20serupa%20di%20portofolio" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-[18px] text-[#0062ff] icon-glide">chat</span>
+          <span>Konsultasi WhatsApp</span>
+        </a>
+        <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm rounded-xl transition-all border border-white/20 btn-hover-lift" href="layanan.html">
+          <span>Lihat Semua Layanan</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Code Tab Switcher
+  function switchCodeTab(tab) {
+    const phpTab = document.getElementById('codeTabPhp');
+    const sqlTab = document.getElementById('codeTabSql');
+    const phpContent = document.getElementById('codeContentPhp');
+    const sqlContent = document.getElementById('codeContentSql');
+    const badge = document.getElementById('codeBadge');
+
+    if (tab === 'php') {
+      phpTab.className = 'px-2.5 py-1 rounded-md bg-white/15 text-white font-mono text-[11px] font-bold transition-all';
+      sqlTab.className = 'px-2.5 py-1 rounded-md bg-transparent text-slate-400 font-mono text-[11px] hover:text-white transition-all';
+      phpContent.classList.remove('hidden');
+      sqlContent.classList.add('hidden');
+      badge.textContent = 'PSR-12 Clean Code';
+    } else {
+      sqlTab.className = 'px-2.5 py-1 rounded-md bg-white/15 text-white font-mono text-[11px] font-bold transition-all';
+      phpTab.className = 'px-2.5 py-1 rounded-md bg-transparent text-slate-400 font-mono text-[11px] hover:text-white transition-all';
+      sqlContent.classList.remove('hidden');
+      phpContent.classList.add('hidden');
+      badge.textContent = '3NF Relational DB';
+    }
+  }
+
+  // Filter with smooth CSS transition
+  (function() {
+    const filterButtons = document.querySelectorAll('#portfolio-filter-container .filter-btn');
+    const items = document.querySelectorAll('#portfolio-grid .portfolio-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-[#0062ff]', 'text-white', 'shadow-xs');
+          b.classList.add('text-[#495874]');
+        });
+
+        this.classList.add('bg-[#0062ff]', 'text-white', 'shadow-xs');
+        this.classList.remove('text-[#495874]');
+
+        const filter = this.getAttribute('data-filter');
+
+        items.forEach(item => {
+          const category = item.getAttribute('data-category');
+          item.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+          if (filter === 'all' || category.includes(filter)) {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.97)';
+            item.style.display = 'flex';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 20);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.97)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 200);
+          }
+        });
+      });
+    });
+  })();
+</script>
+
+<!-- FOOTER (MASTER DARI BERANDA) -->
+<footer class="w-full bg-[#08143a] text-white pt-12 pb-8 border-t border-[#0a1744] mt-auto relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+      <!-- Brand Profile -->
+      <div class="lg:col-span-5 space-y-3">
+        <div class="flex items-center gap-3">
+          <img alt="Logo CiptaCoding" class="h-8 w-auto object-contain bg-white p-1 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1c16t_3qpUHK5MKtFfw0a3wWEB4jk069vDksN062PIluB3scNRs0QDRd__0HnxoseaBeSAUTaY8i92lfXdPmqmQ9Ydt2HMUSQg5DzkKVReDH3VwV7OWasnMwGc3xaHn3cXj-9kotv2WXHvVQ2THk--oYtZQ_7PhwGkWlXG7wPBD_gZ3T6hvRaq9PlxjNkDzENlgMkPfa6FsilqJ6x9a38d1YSUB8w-JpYqDpPtDMMQWk3MSqQVhrM3K4ddVz1FoGdkg"/>
+          <span class="font-display text-xl text-white font-extrabold">Cipta<span class="text-[#0062ff]">Coding</span></span>
+        </div>
+        <p class="text-xs text-slate-300 max-w-sm leading-relaxed">
+          Mitra terpercaya bimbingan coding IT, pengerjaan modul praktikum, pembuatan website, dan sistem digital bisnis dengan standar clean architecture dan garansi revisi tuntas.
+        </p>
+        <div class="flex items-center gap-2 text-xs text-emerald-400 font-semibold pt-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>100% Source Code Orisinal &amp; Bimbingan Sidang 1-on-1</span>
+        </div>
+      </div>
+      <!-- Navigasi Cepat (5 Menu Utama) -->
+      <div class="lg:col-span-3 space-y-2">
+        <div class="text-xs uppercase font-extrabold tracking-wider text-slate-200">Menu Utama</div>
+        <ul class="space-y-2 text-xs text-slate-300">
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="index.html">Beranda</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="layanan.html">Katalog Layanan IT</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="cara-order.html">Alur Pemesanan</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="portofolio.html">Portofolio &amp; Studi Kasus</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="tanya-jawab.html">Tanya Jawab / FAQ</a></li>
+        </ul>
+      </div>
+      <!-- Kontak Resmi -->
+      <div class="lg:col-span-4 space-y-2">
+        <div class="text-xs uppercase font-extrabold tracking-wider text-slate-200">Kontak &amp; Konsultasi</div>
+        <p class="text-xs text-slate-300">Diskusikan kebutuhan tugas, skripsi, atau transformasi sistem digital UMKM Anda langsung dengan tim engineer kami.</p>
+        <div class="space-y-2 text-xs text-slate-300 pt-1">
+          <a class="flex items-center gap-2 hover:text-[#60a5fa] transition-colors group" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20di%20CiptaCoding" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-[#0062ff] group-hover:scale-110 transition-transform">chat</span>
+            <span>WhatsApp: 0877-2305-7547</span>
+          </a>
+          <a class="flex items-center gap-2 hover:text-[#60a5fa] transition-colors group" href="https://instagram.com/ciptacoding" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-[#0062ff] group-hover:scale-110 transition-transform">photo_camera</span>
+            <span>Instagram: @ciptacoding</span>
+          </a>
+          <div class="flex items-center gap-2 text-slate-400">
+            <span class="material-symbols-outlined text-[18px] text-slate-400">schedule</span>
+            <span>Senin - Minggu (08.00 - 23.00 WIB)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Copyright -->
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400 border-t border-white/10">
+      <p>© 2025 CiptaCoding. Hak Cipta Dilindungi.</p>
+      <div class="flex items-center gap-3">
+        <span>Privasi Mahasiswa Terjamin (NDA)</span>
+        <span>•</span>
+        <span>Garansi Revisi &amp; Bimbingan Sidang</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP QUICK CTA BUTTON (MASTER DARI BERANDA) -->
+<div class="fixed bottom-6 right-6 z-50 flex items-center group">
+  <a class="flex items-center gap-2.5 bg-[#0062ff] hover:bg-[#0051d4] text-white px-4 py-3 rounded-full shadow-2xl hover:shadow-[#0062ff]/50 border-2 border-white/90 transition-all duration-300 active:scale-95 animate-bounce-subtle group-hover:pr-5 group-hover:scale-105" href="https://wa.me/6287723057547?text=Halo%20kak%20CiptaCoding%2C%20saya%20mau%20tanya-tanya%20konsultasi%20sekarang" rel="noopener noreferrer" target="_blank" title="Chat WhatsApp Fast Response">
+    <div class="relative flex items-center justify-center">
+      <span class="material-symbols-outlined text-[24px]">chat</span>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border border-white animate-ping"></span>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border border-white"></span>
+    </div>
+    <div class="text-left leading-tight hidden sm:block">
+      <p class="text-[10px] uppercase font-bold text-blue-200">Online <span class="text-emerald-300 font-extrabold">&lt;10 Mnt</span></p>
+      <p class="text-xs font-bold text-white tracking-wide">Konsultasi Gratis</p>
+    </div>
+  </a>
+</div>
+
+<!-- COMMON INTERACTION SCRIPTS (Navbar Scroll, Mobile Drawer, 3D Tilt, Reveal, Count-Up) -->
+<script>
+// 1. Navbar Scroll Glass Elevation
+const mainHeader = document.getElementById('main-header');
+if (mainHeader) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      mainHeader.classList.add('navbar-scrolled');
+    } else {
+      mainHeader.classList.remove('navbar-scrolled');
+    }
+  }, { passive: true });
+}
+
+// 2. Mobile Menu Toggle
+const mobileBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const icon = mobileBtn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+    }
+  });
+}
+
+// 3. 3D Tilt Effect on Cards (Hover capable devices only)
+if (window.matchMedia('(hover: hover)').matches) {
+  document.querySelectorAll('.tilt-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -4;
+      const rotateY = ((x - centerX) / centerX) * 4;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+    });
+  });
+}
+
+// 4. Scroll Reveal with Staggering
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal-show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal-init').forEach(el => observer.observe(el));
+
+// 5. Universal Counter Number Count-Up Animation
+function runCountUp(el) {
+  const target = parseFloat(el.getAttribute('data-target') || '0');
+  const suffix = el.getAttribute('data-suffix') || '';
+  const isDecimal = el.getAttribute('data-decimal') ? parseInt(el.getAttribute('data-decimal')) : 0;
+  const duration = 1500;
+  const startTime = performance.now();
+
+  function updateNumber(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+    const current = target * ease;
+    
+    if (isDecimal > 0) {
+      el.textContent = current.toFixed(isDecimal) + suffix;
+    } else if (target >= 1000) {
+      el.textContent = Math.floor(current).toLocaleString('id-ID') + suffix;
+    } else {
+      el.textContent = Math.floor(current) + suffix;
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(updateNumber);
+    } else {
+      if (isDecimal > 0) el.textContent = target.toFixed(isDecimal) + suffix;
+      else if (target >= 1000) el.textContent = target.toLocaleString('id-ID') + suffix;
+      else el.textContent = target + suffix;
+    }
+  }
+  requestAnimationFrame(updateNumber);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counters = entry.target.querySelectorAll('.counter-number');
+      counters.forEach(c => runCountUp(c));
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.25 });
+document.querySelectorAll('[data-counter-container], #metrics-section, .counter-wrapper').forEach(el => counterObserver.observe(el));
+</script>
+</body>
+</html>
+

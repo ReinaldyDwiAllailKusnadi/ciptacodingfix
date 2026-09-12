@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Pusat Bantuan & Tanya Jawab Lengkap - CiptaCoding - CiptaCoding</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            navy: "#08143a",
+            dark: "#0a1744",
+            blue: "#0062ff",
+            hover: "#0051d4",
+            light: "#edf4ff",
+            subtle: "#f3f7fd"
+          },
+          primary: "#0062ff",
+          "primary-container": "#0062ff",
+          "on-primary": "#ffffff",
+          surface: "#f8faff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f1f5fb",
+          "surface-container": "#e8eef8",
+          "surface-container-high": "#dbe5f5",
+          "on-surface": "#08143a",
+          "on-surface-variant": "#495874",
+          "outline-variant": "#d2dced",
+          "inverse-surface": "#08143a",
+          "inverse-on-surface": "#f1f5fb"
+        },
+        fontFamily: {
+          body: ["Plus Jakarta Sans", "sans-serif"],
+          display: ["Plus Jakarta Sans", "sans-serif"],
+          code: ["JetBrains Mono", "monospace"]
+        }
+      }
+    }
+  };
+  </script>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#f8faff] font-body text-[#08143a] antialiased min-h-screen flex flex-col justify-between selection:bg-[#0062ff] selection:text-white relative">
+
+<!-- Top Bar Promosi / Announcement (Master dari Beranda) -->
+<div class="w-full bg-[#08143a] text-white py-2 px-4 text-center text-xs font-semibold flex items-center justify-center gap-2 border-b border-[#0a1744] shadow-sm z-50 relative">
+  <div class="flex flex-wrap items-center justify-center gap-2 max-w-7xl mx-auto">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#0062ff]/20 text-[#60a5fa] border border-[#0062ff]/30 text-[11px]">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+      </span>
+      WhatsApp Fast Response &lt; 10 Menit
+    </span>
+    <span class="text-slate-200">Mitra Solusi Coding &amp; Pembuatan Website Terpercaya 2.500+ Klien &amp; Mahasiswa | IG: <a class="underline font-bold text-[#60a5fa] hover:text-white transition-colors" href="https://instagram.com/ciptacoding" rel="noopener noreferrer" target="_blank">@ciptacoding</a></span>
+  </div>
+</div>
+
+<!-- HEADER / NAVBAR (Master dari Beranda dengan micro-interactions) -->
+<header id="main-header" class="sticky top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#d2dced]/70 shadow-[0_2px_12px_rgba(8,20,58,0.04)] transition-all duration-300">
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+    <!-- Brand Logo Sesuai Template Resmi CiptaCoding -->
+    <a class="flex items-center gap-3 focus:outline-none group" href="index.html">
+      <img alt="Logo CiptaCoding" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3JvyuPHO0m1YFnLUOhlaagbNn64nXerWaYsbhW6oQWc76l4TKO8ZAJ_4MnVo9ji_iuwayzuiZJDK4ktkbJWVr0iNB-IbU-PCql0cm1HLyKN3su0Sta-C0x69hYGI23ZZKt98V7HAg_QFP9czl5IXAtAEfHA8IHTXkOc6dQvuVqYAnrN3yy_p_BnUPLFD3p99TxYGZyuTX0BGx6K_4Xq952rIb-FLAVws_Cnde4t-hIMeSKsAkdC_uGj9NxF-kYMw1gw"/>
+      <span class="font-display text-xl sm:text-2xl text-[#08143a] font-extrabold tracking-tight">Cipta<span class="text-[#0062ff]">Coding</span></span>
+    </a>
+    <!-- Nav Links Desktop (5 Menu) -->
+    <nav class="hidden lg:flex items-center gap-5">
+      <a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="index.html">Beranda</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="layanan.html">Layanan</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="cara-order.html">Cara Order</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="portofolio.html">Portofolio</a><a class="relative text-sm font-bold text-[#0062ff] bg-[#edf4ff] px-3.5 py-1.5 rounded-xl transition-all shadow-2xs" href="tanya-jawab.html">Tanya Jawab</a>
+    </nav>
+    <!-- Nav Action CTA (Tanpa Icon Instagram) -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a class="btn-shimmer btn-hover-lift inline-flex items-center gap-2 bg-[#0062ff] text-white hover:bg-[#0051d4] font-semibold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-[0.98] animate-pulse-glow group" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20kebutuhan%20coding%20di%20CiptaCoding" rel="noopener noreferrer" target="_blank">
+        <span>Konsultasi Gratis</span>
+        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">chat</span>
+      </a>
+      <!-- Hamburger button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff] rounded-xl transition-colors focus:outline-none" aria-label="Buka Menu Navigasi">
+        <span class="material-symbols-outlined text-[26px]">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-[#d2dced] px-4 pt-3 pb-6 space-y-2 shadow-xl">
+    <a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="index.html">Beranda</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="layanan.html">Layanan</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="cara-order.html">Cara Order</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="portofolio.html">Portofolio</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-bold bg-[#edf4ff] text-[#0062ff]" href="tanya-jawab.html">Tanya Jawab</a>
+    <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+      <a class="btn-shimmer w-full flex items-center justify-center gap-2 bg-[#0062ff] text-white py-3 rounded-xl font-bold text-sm shadow-md" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20kebutuhan%20coding%20di%20CiptaCoding" target="_blank">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>Konsultasi Cepat via WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<main class="w-full flex-grow relative overflow-hidden">
+  <!-- Subtle Background Glows -->
+  <div class="absolute -top-16 -left-20 w-96 h-96 bg-[#0062ff]/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute top-1/3 -right-20 w-96 h-96 bg-[#08143a]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- HERO SECTION TANYA JAWAB -->
+  <section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-10 bg-tech-grid">
+    <div class="text-center max-w-3xl mx-auto space-y-3 mb-8">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#d2dced] shadow-xs text-xs font-semibold text-[#08143a]">
+        <span class="material-symbols-outlined text-[16px] text-[#0062ff] icon-pop">verified_user</span>
+        <span class="text-[#0062ff] font-bold">HELP CENTER &amp; DOKUMENTASI</span>
+        <span class="text-slate-300">•</span>
+        <span class="text-[#495874]">Terbuka &amp; Terpercaya</span>
+      </div>
+      <h1 class="font-display text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-[#08143a] tracking-tight leading-[1.18]">
+        Pusat Bantuan &amp; <span class="text-[#0062ff]">Pertanyaan Umum.</span>
+      </h1>
+      <p class="text-[#495874] text-base sm:text-lg leading-relaxed">
+        Semua hal yang perlu Anda ketahui sebelum memesan layanan di CiptaCoding. Kami siap memberikan transparansi penuh, kepastian teknis, dan pendampingan bebas cemas.
+      </p>
+    </div>
+
+    <!-- Live Interactive Search Bar -->
+    <div class="max-w-2xl mx-auto mb-6">
+      <div class="relative bg-white rounded-2xl border border-[#d2dced] shadow-md p-2 flex items-center gap-3 transition-all duration-300 focus-within:shadow-xl focus-within:border-[#0062ff]">
+        <div class="w-10 h-10 rounded-xl bg-[#edf4ff] flex items-center justify-center text-[#0062ff] shrink-0 icon-pop">
+          <span class="material-symbols-outlined text-[22px]">search</span>
+        </div>
+        <input class="w-full bg-transparent border-none outline-none text-xs sm:text-sm text-[#08143a] placeholder:text-slate-400 py-2 font-medium" id="faqSearchInput" placeholder="Ketik kata kunci: revisi, source code, DP, Google Meet, privasi..." type="text"/>
+        <button class="hidden w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-400 transition-colors" id="clearSearchBtn" title="Bersihkan pencarian" type="button">
+          <span class="material-symbols-outlined text-[18px]">close</span>
+        </button>
+        <button class="px-5 py-2.5 rounded-xl bg-[#0062ff] hover:bg-[#004bd2] text-white text-xs sm:text-sm font-bold transition-all shadow-xs shrink-0 hidden sm:inline-flex items-center gap-1.5 btn-shimmer btn-hover-lift" type="button">
+          <span>Cari Solusi</span>
+          <span class="material-symbols-outlined text-[16px] icon-glide">arrow_forward</span>
+        </button>
+      </div>
+
+      <!-- Quick Topic Filter Chips -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-4">
+        <span class="text-xs text-[#495874] font-semibold mr-1">Topik Cepat:</span>
+        <button class="quick-chip px-3 py-1 rounded-full bg-white border border-[#d2dced] hover:border-[#0062ff] hover:bg-[#edf4ff] text-[#495874] hover:text-[#0062ff] text-xs font-semibold transition-all shadow-2xs btn-hover-lift" data-tag="pemesanan" type="button">
+          #AlurPemesanan
+        </button>
+        <button class="quick-chip px-3 py-1 rounded-full bg-white border border-[#d2dced] hover:border-[#0062ff] hover:bg-[#edf4ff] text-[#495874] hover:text-[#0062ff] text-xs font-semibold transition-all shadow-2xs btn-hover-lift" data-tag="kerahasiaan" type="button">
+          #100%Privasi
+        </button>
+        <button class="quick-chip px-3 py-1 rounded-full bg-white border border-[#d2dced] hover:border-[#0062ff] hover:bg-[#edf4ff] text-[#495874] hover:text-[#0062ff] text-xs font-semibold transition-all shadow-2xs btn-hover-lift" data-tag="bimbingan" type="button">
+          #Meet1on1
+        </button>
+        <button class="quick-chip px-3 py-1 rounded-full bg-white border border-[#d2dced] hover:border-[#0062ff] hover:bg-[#edf4ff] text-[#495874] hover:text-[#0062ff] text-xs font-semibold transition-all shadow-2xs btn-hover-lift" data-tag="revisi" type="button">
+          #GaransiRevisi
+        </button>
+      </div>
+    </div>
+
+    <!-- Statistical Trust Badges Ribbon -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-4">
+      <div class="tilt-card bg-white rounded-2xl p-4 border border-[#d2dced] shadow-xs flex items-center gap-3 hover:border-[#0062ff] transition-all">
+        <div class="w-10 h-10 rounded-xl bg-[#edf4ff] flex items-center justify-center text-[#0062ff] shrink-0 icon-pop">
+          <span class="material-symbols-outlined text-[20px]">lock</span>
+        </div>
+        <div>
+          <div class="font-display text-base sm:text-lg font-extrabold text-[#08143a] counter-number" data-target="100" data-suffix="%">100%</div>
+          <div class="text-[11px] text-[#495874] font-medium">Data Rahasia</div>
+        </div>
+      </div>
+      <div class="tilt-card bg-white rounded-2xl p-4 border border-[#d2dced] shadow-xs flex items-center gap-3 hover:border-[#0062ff] transition-all">
+        <div class="w-10 h-10 rounded-xl bg-[#edf4ff] flex items-center justify-center text-[#0062ff] shrink-0 icon-pop">
+          <span class="material-symbols-outlined text-[20px]">video_call</span>
+        </div>
+        <div>
+          <div class="font-display text-base sm:text-lg font-extrabold text-[#08143a]">1-on-1</div>
+          <div class="text-[11px] text-[#495874] font-medium">Sesi Google Meet</div>
+        </div>
+      </div>
+      <div class="tilt-card bg-white rounded-2xl p-4 border border-[#d2dced] shadow-xs flex items-center gap-3 hover:border-emerald-400 transition-all">
+        <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0 icon-pop">
+          <span class="material-symbols-outlined text-[20px]">published_with_changes</span>
+        </div>
+        <div>
+          <div class="font-display text-base sm:text-lg font-extrabold text-[#08143a]">Revisi</div>
+          <div class="text-[11px] text-[#495874] font-medium">Sesuai Kesepakatan</div>
+        </div>
+      </div>
+      <div class="tilt-card bg-white rounded-2xl p-4 border border-[#d2dced] shadow-xs flex items-center gap-3 hover:border-amber-400 transition-all">
+        <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600 shrink-0 icon-pop">
+          <span class="material-symbols-outlined text-[20px]">bolt</span>
+        </div>
+        <div>
+          <div class="font-display text-base sm:text-lg font-extrabold text-[#08143a]">&lt; 10 Mnt</div>
+          <div class="text-[11px] text-[#495874] font-medium">Respon WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIZED FAQ GROUPS & NAVIGATION GRID -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Sticky Left Category Navigation & Quick Card -->
+      <aside class="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
+        <div class="tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs">
+          <span class="text-[11px] uppercase font-bold tracking-wider text-[#495874] block mb-3">
+            Daftar Kategori FAQ
+          </span>
+          <nav class="flex flex-col gap-1.5" id="categoryNav">
+            <a class="nav-item flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-[#edf4ff] text-[#0062ff] text-xs sm:text-sm font-bold transition-all" href="#kategori-pemesanan">
+              <span class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-[18px]">receipt_long</span>
+                Pemesanan &amp; Pembayaran
+              </span>
+              <span class="text-[11px] px-2 py-0.5 rounded-full bg-white font-mono font-bold text-[#0062ff]">3</span>
+            </a>
+            <a class="nav-item flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-50 text-[#495874] hover:text-[#08143a] text-xs sm:text-sm font-medium transition-all" href="#kategori-privasi">
+              <span class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-[18px]">shield</span>
+                Kerahasiaan &amp; Privasi
+              </span>
+              <span class="text-[11px] px-2 py-0.5 rounded-full bg-slate-100 font-mono font-bold text-[#495874]">2</span>
+            </a>
+            <a class="nav-item flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-50 text-[#495874] hover:text-[#08143a] text-xs sm:text-sm font-medium transition-all" href="#kategori-bimbingan">
+              <span class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-[18px]">school</span>
+                Bimbingan Mahasiswa
+              </span>
+              <span class="text-[11px] px-2 py-0.5 rounded-full bg-slate-100 font-mono font-bold text-[#495874]">2</span>
+            </a>
+            <a class="nav-item flex items-center justify-between px-3.5 py-2.5 rounded-xl hover:bg-slate-50 text-[#495874] hover:text-[#08143a] text-xs sm:text-sm font-medium transition-all" href="#kategori-revisi">
+              <span class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-[18px]">update</span>
+                Garansi &amp; Revisi Dosen
+              </span>
+              <span class="text-[11px] px-2 py-0.5 rounded-full bg-slate-100 font-mono font-bold text-[#495874]">2</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Direct WhatsApp Help Box (Master Deep Navy) -->
+        <div class="relative overflow-hidden bg-[#08143a] text-white rounded-2xl p-6 shadow-xl border border-white/10">
+          <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-[#0062ff]/20 rounded-full blur-xl pointer-events-none"></div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-[11px] font-bold text-cyan-300 tracking-wider uppercase">
+              HELP CENTER FAST RESPONSE
+            </span>
+          </div>
+          <h3 class="font-display text-base sm:text-lg font-bold text-white mb-2 leading-snug">
+            Pertanyaan Anda Belum Terjawab di Sini?
+          </h3>
+          <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+            Chat tim engineer kami via WhatsApp. Kami membantu konsultasi ide topik, rancangan sistem, dan skema pengerjaan ramah mahasiswa.
+          </p>
+          <div class="bg-white/5 rounded-xl p-3 mb-4 flex items-center gap-2.5 border border-white/10">
+            <span class="material-symbols-outlined text-cyan-400 text-[20px]">timer</span>
+            <span class="text-xs text-slate-200">
+              Estimasi respon: <strong class="text-cyan-300">&lt; 10 menit</strong>
+            </span>
+          </div>
+          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#0062ff] hover:bg-[#004bd2] text-white font-bold text-xs sm:text-sm transition-all shadow-md btn-shimmer btn-hover-lift" href="https://wa.me/6287723057547?text=Halo%20Admin%20CiptaCoding,%20saya%20punya%20pertanyaan%20seputar%20layanan" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] icon-glide">chat</span>
+            <span>Tanya Admin Sekarang</span>
+          </a>
+        </div>
+
+        <!-- Academic Code Integrity Guarantee Callout -->
+        <div class="tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs flex items-start gap-3">
+          <div class="w-9 h-9 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600 shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+          </div>
+          <div>
+            <div class="font-display text-xs sm:text-sm font-bold text-[#08143a]">Bebas Plagiasi &amp; Orisinal</div>
+            <p class="text-xs text-[#495874] mt-1 leading-relaxed">
+              Semua arsitektur program dan modul ditulis bersih dari nol. Kami menolak perbanyakan massal template usang demi reputasi akademik Anda.
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Main FAQ Content Accordions -->
+      <div class="lg:col-span-8 space-y-8" id="faqContentContainer">
+        <!-- Kategori 1: Alur Pemesanan & Pembayaran -->
+        <section class="faq-group scroll-mt-28" data-group-name="pemesanan" id="kategori-pemesanan">
+          <div class="flex items-center gap-3 pb-3 mb-3 border-b border-slate-100">
+            <div class="w-10 h-10 rounded-xl bg-[#edf4ff] flex items-center justify-center text-[#0062ff] shrink-0">
+              <span class="material-symbols-outlined text-[22px]">payments</span>
+            </div>
+            <div>
+              <h2 class="font-display text-lg sm:text-xl font-bold text-[#08143a]">Alur Pemesanan &amp; Pembayaran</h2>
+              <p class="text-xs text-[#495874]">Langkah mudah memulai kolaborasi hingga serah terima berkas.</p>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <!-- Q1 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">1</span>
+                  Bagaimana cara konsultasi dan memulai pemesanan?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <div class="bg-slate-50 rounded-xl p-4 mb-3 border border-slate-100">
+                  <ol class="flex flex-col gap-2 list-decimal pl-5 text-[#08143a]">
+                    <li><strong>Diskusi Kebutuhan:</strong> Hubungi admin via WhatsApp untuk memaparkan judul skripsi, rumusan masalah, diagram alur, atau requirement tugas IT Anda.</li>
+                    <li><strong>Telaah Spesifikasi:</strong> Tim engineer CiptaCoding menganalisis teknologi yang tepat (Laravel, Python, Flutter, Node.js, dll.) beserta jadwal target penyelesaian.</li>
+                    <li><strong>Kesepakatan Ruang Lingkup:</strong> Kami mengirimkan lembar rangkuman proyek (Scope of Work), batas waktu, dan rincian fitur tanpa klausul tersembunyi.</li>
+                    <li><strong>Mulai Pengerjaan:</strong> Proyek langsung dieksekusi setelah konfirmasi persetujuan dari Anda.</li>
+                  </ol>
+                </div>
+                <p class="text-xs text-slate-500">
+                  Konsultasi awal 100% gratis tanpa biaya komitmen apa pun sebelum Anda menyepakati ruang lingkup kerja.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">2</span>
+                  Apakah pengerjaan bisa dilakukan bertahap (DP dan pelunasan saat selesai)?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <p class="mb-3 text-[#08143a] font-medium">
+                  <strong>Ya, tentu saja.</strong> Kami menerapkan skema pembayaran bertahap demi kenyamanan dan rasa aman Anda:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+                  <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                    <span class="font-bold text-xs sm:text-sm text-[#08143a] block mb-0.5">Tahap 1 — Uang Muka (DP)</span>
+                    <span class="text-xs text-[#495874]">Sebagai tanda jadi untuk mengunci slot kalender pengerjaan tim teknis.</span>
+                  </div>
+                  <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                    <span class="font-bold text-xs sm:text-sm text-[#08143a] block mb-0.5">Tahap 2 — Demo &amp; Pelunasan</span>
+                    <span class="text-xs text-[#495874]">Pelunasan dibayarkan hanya setelah aplikasi selesai diuji coba &amp; lolos live demo di depan Anda.</span>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-500">
+                  Seluruh source code, database sql, dan dokumentasi instalasi akan diserahterimakan seutuhnya pasca-pelunasan.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">3</span>
+                  Metode pembayaran apa saja yang didukung?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <p class="mb-3 text-[#08143a]">
+                  Kami mendukung transaksi perbankan dan dompet digital resmi Indonesia agar proses verifikasi berlangsung instan tanpa biaya admin tambahan:
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-mono text-xs font-semibold text-[#08143a]">BCA Transfer</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-mono text-xs font-semibold text-[#08143a]">Bank Mandiri</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-mono text-xs font-semibold text-[#08143a]">BRI</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-mono text-xs font-semibold text-[#08143a]">BNI</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-mono text-xs font-semibold text-[#08143a]">QRIS Seluruh Bank</span>
+                  <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-mono text-xs font-semibold text-[#08143a]">GoPay / OVO / Dana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kategori 2: Kerahasiaan & Keamanan Data -->
+        <section class="faq-group scroll-mt-28" data-group-name="kerahasiaan" id="kategori-privasi">
+          <div class="flex items-center gap-3 pb-3 mb-3 border-b border-slate-100">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+              <span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+            </div>
+            <div>
+              <h2 class="font-display text-lg sm:text-xl font-bold text-[#08143a]">Kerahasiaan &amp; Keamanan Data (100% Privacy)</h2>
+              <p class="text-xs text-[#495874]">Komitmen integritas akademik, privasi identitas, dan lisensi kepemilikan.</p>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <!-- Q4 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">4</span>
+                  Apakah identitas dan data pribadi saya aman?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <div class="bg-[#edf4ff]/50 rounded-xl p-4 border border-[#0062ff]/10">
+                  <p class="font-bold text-xs sm:text-sm text-[#08143a] mb-2">
+                    Jaminan Kerahasiaan Penuh (Strict Non-Disclosure Guarantee):
+                  </p>
+                  <ul class="flex flex-col gap-2 text-xs sm:text-sm text-[#495874]">
+                    <li class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-[#0062ff] text-[18px] shrink-0">check_circle</span>
+                      <span>Nama mahasiswa, NIM, nama dosen pembimbing, dan asal institusi kampus <strong>tidak pernah</strong> dipublikasikan ke portfolio publik tanpa izin tertulis.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-[#0062ff] text-[18px] shrink-0">check_circle</span>
+                      <span>Materi bab skripsi, dataset mentah, dan kredensial server disimpan dalam repositori terenkripsi internal kami.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-[#0062ff] text-[18px] shrink-0">check_circle</span>
+                      <span>Setelah masa bimbingan tuntas dan garansi usai, Anda berhak mengajukan penghapusan arsip repositori dari server kami.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">5</span>
+                  Apakah source code akan dijual kembali ke orang lain?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <p class="mb-2 text-[#08143a] font-bold">
+                  TIDAK. Hak cipta dan kepemilikan kode sepenuhnya menjadi milik Anda.
+                </p>
+                <p>
+                  Setiap arsitektur basis data, business-logic, dan antarmuka dirancang secara khusus untuk menjawab rumusan masalah Anda. Kami tidak mendaur ulang skrip Anda untuk dijual ke pihak ketiga demi menjaga keaslian riset dan mencegah deteksi kesamaan kode (code similarity check) di kampus Anda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kategori 3: Bimbingan & Pemahaman Mahasiswa -->
+        <section class="faq-group scroll-mt-28" data-group-name="bimbingan" id="kategori-bimbingan">
+          <div class="flex items-center gap-3 pb-3 mb-3 border-b border-slate-100">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-600 shrink-0">
+              <span class="material-symbols-outlined text-[22px]">record_voice_over</span>
+            </div>
+            <div>
+              <h2 class="font-display text-lg sm:text-xl font-bold text-[#08143a]">Bimbingan &amp; Pemahaman Mahasiswa</h2>
+              <p class="text-xs text-[#495874]">Kami bukan sekadar pembuat kode, melainkan partner belajar hingga Anda siap sidang.</p>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <!-- Q6 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">6</span>
+                  Bagaimana jika saya belum mengerti kodingannya sama sekali?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <p class="mb-3 text-[#08143a]">
+                  Jangan khawatir — ini adalah skenario paling umum yang kami tangani setiap hari. Kami memberikan paket pemahaman komprehensif:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                    <span class="font-bold text-xs text-[#08143a] block mb-1">Catatan Komentar Rapi</span>
+                    <p class="text-[11px] text-[#495874]">Komentar bahasa Indonesia pada baris fungsi kunci, rumus hitung algoritma, dan route sistem.</p>
+                  </div>
+                  <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                    <span class="font-bold text-xs text-[#08143a] block mb-1">Panduan Alur Logika</span>
+                    <p class="text-[11px] text-[#495874]">Ringkasan cara kerja modul dari input user, proses controller/API, hingga output database.</p>
+                  </div>
+                  <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                    <span class="font-bold text-xs text-[#08143a] block mb-1">Simulasi Tanya Sidang</span>
+                    <p class="text-[11px] text-[#495874]">Daftar pertanyaan yang paling sering diajukan oleh dosen penguji beserta jawaban taktisnya.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">7</span>
+                  Apakah bisa meeting online via Google Meet?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <p class="mb-2 text-[#08143a] font-bold">
+                  Sangat bisa! Sesi interaktif 1-on-1 via Google Meet adalah salah satu fasilitas unggulan kami.
+                </p>
+                <p class="mb-3">
+                  Melalui share-screen langsung, engineer kami akan:
+                </p>
+                <ul class="flex flex-col gap-2 pl-4 list-disc text-xs sm:text-sm text-[#495874]">
+                  <li>Mendemonstrasikan cara instalasi lokal di laptop Anda (setup XAMPP, Node/Python environment, database migration).</li>
+                  <li>Menjelaskan poin-poin krusial yang harus Anda tunjukkan ketika sesi demo bersama dosen pembimbing.</li>
+                  <li>Menjawab langsung hal-hal teknis yang belum Anda pahami sampai Anda merasa percaya diri.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kategori 4: Garansi & Revisi Dosen -->
+        <section class="faq-group scroll-mt-28" data-group-name="revisi" id="kategori-revisi">
+          <div class="flex items-center gap-3 pb-3 mb-3 border-b border-slate-100">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600 shrink-0">
+              <span class="material-symbols-outlined text-[22px]">verified</span>
+            </div>
+            <div>
+              <h2 class="font-display text-lg sm:text-xl font-bold text-[#08143a]">Garansi &amp; Revisi Dosen</h2>
+              <p class="text-xs text-[#495874]">Ketentuan garansi pengerjaan dan perbaikan masukan dosen tanpa kepanikan.</p>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <!-- Q8 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">8</span>
+                  Bagaimana jika ada dosen penguji atau atasan yang meminta revisi?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <p class="mb-3 text-[#08143a] font-medium">
+                  Kami mendampingi revisi sesuai kesepakatan cakupan awal (Scope of Work) hingga tuntas dan disetujui:
+                </p>
+                <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 space-y-2 text-xs sm:text-sm text-[#495874]">
+                  <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-[#0062ff] text-[18px] shrink-0">check</span>
+                    <span><strong>Revisi Minor / Bug:</strong> Perbaikan error, perapihan tata letak UI, atau penyesuaian formula hitungan yang belum pas dicakup <strong>bebas biaya tambahan</strong>.</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-[#0062ff] text-[18px] shrink-0">check</span>
+                    <span><strong>Revisi Mayor / Ganti Algoritma Total:</strong> Jika dosen tiba-tiba mengganti algoritma dasar di tengah jalan atau meminta penambahan sistem baru di luar rencana awal, kami tetap bantu dengan penyesuaian durasi waktu dan biaya penambahan yang sangat terjangkau.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="faq-item tilt-card bg-white rounded-2xl border border-[#d2dced] shadow-xs overflow-hidden transition-all duration-200">
+              <button class="faq-toggle w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-display font-bold text-sm sm:text-base text-[#08143a] hover:text-[#0062ff] transition-colors" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="w-7 h-7 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center shrink-0">9</span>
+                  Berapa lama estimasi waktu pengerjaan tugas atau aplikasi?
+                </span>
+                <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 shrink-0 toggle-icon">expand_more</span>
+              </button>
+              <div class="faq-body px-5 pb-5 pt-0 hidden text-xs sm:text-sm text-[#495874] leading-relaxed">
+                <p class="mb-3 text-[#08143a]">
+                  Durasi disesuaikan dengan kompleksitas fungsional sistem dan tenggat waktu (deadline) yang Anda miliki:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                    <div class="font-display text-base sm:text-lg font-extrabold text-[#0062ff]">1 – 3 Hari</div>
+                    <div class="text-xs font-bold text-[#08143a] mt-1">Tugas Modul Praktikum</div>
+                    <div class="text-[11px] text-[#495874] mt-0.5">Bug fixing, query SQL, mini CRUD.</div>
+                  </div>
+                  <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                    <div class="font-display text-base sm:text-lg font-extrabold text-[#0062ff]">7 – 14 Hari</div>
+                    <div class="text-xs font-bold text-[#08143a] mt-1">Sistem Skripsi Standar</div>
+                    <div class="text-[11px] text-[#495874] mt-0.5">SPK, Web Company, E-Commerce, IoT.</div>
+                  </div>
+                  <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                    <div class="font-display text-base sm:text-lg font-extrabold text-[#0062ff]">Express / Kilat</div>
+                    <div class="text-xs font-bold text-[#08143a] mt-1">Mode Deadline Mepet</div>
+                    <div class="text-[11px] text-[#495874] mt-0.5">Penanganan prioritas tim siaga.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Empty Search Notice -->
+        <div class="hidden py-10 px-6 bg-white rounded-2xl border border-[#d2dced] text-center shadow-xs" id="noResultsState">
+          <div class="w-12 h-12 rounded-full bg-slate-100 mx-auto flex items-center justify-center text-slate-400 mb-3">
+            <span class="material-symbols-outlined text-[28px]">search_off</span>
+          </div>
+          <h3 class="font-display text-base font-bold text-[#08143a] mb-1">Topik Tidak Ditemukan</h3>
+          <p class="text-xs sm:text-sm text-[#495874] max-w-md mx-auto mb-4">
+            Tidak menemukan jawaban yang Anda cari dalam direktori ini? Tanyakan langsung ke tim engineer kami via WhatsApp.
+          </p>
+          <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0062ff] text-white font-bold text-xs sm:text-sm hover:bg-[#004bd2] transition-all" href="https://wa.me/6287723057547?text=Halo%20Admin%20CiptaCoding,%20saya%20ingin%20tanya%20mengenai:%20" id="customQuestionBtn" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span>Tanyakan Pertanyaan Ini ke WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL WORKFLOW VISUAL DIAGRAM SECTION -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-[11px] uppercase font-extrabold tracking-widest text-[#0062ff] bg-[#edf4ff] px-3.5 py-1 rounded-full border border-[#0062ff]/20">Standar Layanan</span>
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-[#08143a] tracking-tight mt-2">
+        Transparansi Dari Pesan Masuk Sampai Sidang Selesai
+      </h2>
+      <p class="text-xs sm:text-sm text-[#495874] mt-2">
+        Kami memangkas keraguan Anda dengan komitmen tahapan kerja yang terstruktur dan terukur.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-[#0062ff] text-white font-display font-extrabold text-sm flex items-center justify-center mb-4 shadow-xs">
+            01
+          </div>
+          <h3 class="font-display text-sm font-bold text-[#08143a] mb-1.5">Audit &amp; Solusi</h3>
+          <p class="text-xs text-[#495874] leading-relaxed">
+            Review materi bab 1-3 atau wireframe Anda. Memberi saran arsitektur kode terbaik tanpa manipulasi teknis.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-[#0062ff] font-bold flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">check</span> Bebas Biaya Awal
+        </div>
+      </div>
+
+      <div class="tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs flex flex-col justify-between stagger-1">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-[#0062ff] text-white font-display font-extrabold text-sm flex items-center justify-center mb-4 shadow-xs icon-pop">
+            01
+          </div>
+          <h3 class="font-display text-sm font-bold text-[#08143a] mb-1.5">Audit &amp; Solusi</h3>
+          <p class="text-xs text-[#495874] leading-relaxed">
+            Review materi bab 1-3 atau wireframe Anda. Memberi saran arsitektur kode terbaik tanpa manipulasi teknis.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-[#0062ff] font-bold flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">check</span> Bebas Biaya Awal
+        </div>
+      </div>
+
+      <div class="tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs flex flex-col justify-between stagger-2">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-[#0062ff] text-white font-display font-extrabold text-sm flex items-center justify-center mb-4 shadow-xs icon-pop">
+            02
+          </div>
+          <h3 class="font-display text-sm font-bold text-[#08143a] mb-1.5">Coding Orisinal</h3>
+          <p class="text-xs text-[#495874] leading-relaxed">
+            Penulisan program rapi sesuai standar clean code, modular, dan dilengkapi komentar penjelas tiap fungsi.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-[#0062ff] font-bold flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">code</span> Repositori Bersih
+        </div>
+      </div>
+
+      <div class="tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs flex flex-col justify-between stagger-3">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-[#0062ff] text-white font-display font-extrabold text-sm flex items-center justify-center mb-4 shadow-xs icon-pop">
+            03
+          </div>
+          <h3 class="font-display text-sm font-bold text-[#08143a] mb-1.5">Live Demo &amp; Uji Coba</h3>
+          <p class="text-xs text-[#495874] leading-relaxed">
+            Uji coba sistem bersama melalui sesi Google Meet interaktif sebelum serah terima berkas final.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-[#0062ff] font-bold flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">laptop_mac</span> Pembuktian Fungsi
+        </div>
+      </div>
+
+      <div class="tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs flex flex-col justify-between stagger-4">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-[#0062ff] text-white font-display font-extrabold text-sm flex items-center justify-center mb-4 shadow-xs icon-pop">
+            04
+          </div>
+          <h3 class="font-display text-sm font-bold text-[#08143a] mb-1.5">Garansi Revisi</h3>
+          <p class="text-xs text-[#495874] leading-relaxed">
+            Dukungan perbaikan dari kami bila dosen penguji memberikan koreksi atau catatan revisi teknis.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-[#0062ff] font-bold flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">support_agent</span> Sampai Lolos
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM HEROIC CTA BANNER (MASTER DEEP NAVY) -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="relative overflow-hidden rounded-3xl bg-[#08143a] text-white p-8 sm:p-12 lg:p-16 shadow-2xl border border-white/10 bg-tech-grid">
+      <div class="pointer-events-none absolute -right-20 -top-20 w-96 h-96 bg-[#0062ff]/25 rounded-full blur-3xl"></div>
+      <div class="pointer-events-none absolute -left-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
+      <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl text-center lg:text-left space-y-3">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-cyan-300 text-xs font-bold">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+            <span>KONSULTASI PRIORITAS HARI INI</span>
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+            Masih Ragu atau Ada Detail Khusus yang Ingin Dibahas?
+          </h2>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Kirimkan kerangka tugas, skripsi, atau kebutuhan sistem Anda. Dapatkan jawaban langsung dari teknisi kami tanpa biaya.
+          </p>
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-slate-400">
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-cyan-400">verified</span> Respon Cepat</span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-cyan-400">lock</span> 100% Rahasia</span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-cyan-400">handshake</span> Bebas Konsultasi</span>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 shrink-0 w-full sm:w-auto">
+          <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-[#0062ff] hover:bg-[#004bd2] text-white font-bold text-xs sm:text-sm shadow-lg shadow-[#0062ff]/30 transition-all hover:scale-[1.02] btn-shimmer btn-hover-lift" href="https://wa.me/6287723057547?text=Halo%20CiptaCoding,%20saya%20sudah%20membaca%20halaman%20Tanya%20Jawab%20dan%20ingin%20konsultasi%20langsung" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[20px] icon-glide">chat</span>
+            <span>Hubungi Kami via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  (function initFAQSystem() {
+    const toggles = document.querySelectorAll('.faq-toggle');
+    const searchInput = document.getElementById('faqSearchInput');
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const chips = document.querySelectorAll('.quick-chip');
+    const faqItems = document.querySelectorAll('.faq-item');
+    const faqGroups = document.querySelectorAll('.faq-group');
+    const noResults = document.getElementById('noResultsState');
+    const customQuestionBtn = document.getElementById('customQuestionBtn');
+
+    // 1. Accordion Toggle Logic with Smooth MaxHeight
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const body = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.toggle-icon');
+        const isHidden = body.classList.contains('hidden');
+
+        // Close other open items in the same group
+        const parentGroup = toggle.closest('.faq-group');
+        if (parentGroup) {
+          parentGroup.querySelectorAll('.faq-body').forEach(otherBody => {
+            if (otherBody !== body) {
+              otherBody.classList.add('hidden');
+              const otherIcon = otherBody.previousElementSibling.querySelector('.toggle-icon');
+              if (otherIcon) otherIcon.classList.remove('rotate-180');
+            }
+          });
+        }
+
+        if (isHidden) {
+          body.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        } else {
+          body.classList.add('hidden');
+          icon.classList.remove('rotate-180');
+        }
+      });
+    });
+
+    // 2. Search & Filter Simulator
+    function filterFAQs(query) {
+      const cleanQuery = query.toLowerCase().trim();
+      let matchedCount = 0;
+
+      if (cleanQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      faqGroups.forEach(group => {
+        let groupHasMatch = false;
+        const items = group.querySelectorAll('.faq-item');
+
+        items.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          const match = text.includes(cleanQuery);
+          if (match) {
+            item.style.display = '';
+            groupHasMatch = true;
+            matchedCount++;
+            
+            if (cleanQuery.length > 2) {
+              const body = item.querySelector('.faq-body');
+              const icon = item.querySelector('.toggle-icon');
+              if (body) body.classList.remove('hidden');
+              if (icon) icon.classList.add('rotate-180');
+            }
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        if (groupHasMatch) {
+          group.style.display = '';
+        } else {
+          group.style.display = 'none';
+        }
+      });
+
+      if (matchedCount === 0 && cleanQuery.length > 0) {
+        noResults.classList.remove('hidden');
+        if (customQuestionBtn) {
+          customQuestionBtn.href = `https://wa.me/6287723057547?text=${encodeURIComponent('Halo Admin CiptaCoding, saya mau bertanya mengenai: ' + cleanQuery)}`;
+        }
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        filterFAQs(e.target.value);
+      });
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        filterFAQs('');
+        searchInput.focus();
+      });
+    }
+
+    // 3. Quick Chips Filter Click Handler
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const tag = chip.getAttribute('data-tag');
+        if (searchInput) {
+          searchInput.value = tag;
+          filterFAQs(tag);
+        }
+        const container = document.getElementById('faqContentContainer');
+        if (container) {
+          container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // 4. Smooth category active nav indicator on scroll
+    const navLinks = document.querySelectorAll('#categoryNav .nav-item');
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      faqGroups.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 180 && rect.bottom >= 180) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href').replace('#', '');
+        if (href === currentSection) {
+          link.classList.add('bg-[#edf4ff]', 'text-[#0062ff]', 'font-bold');
+          link.classList.remove('text-[#495874]', 'font-medium');
+        } else {
+          link.classList.remove('bg-[#edf4ff]', 'text-[#0062ff]', 'font-bold');
+          link.classList.add('text-[#495874]', 'font-medium');
+        }
+      });
+    });
+  })();
+</script>
+
+<!-- FOOTER (MASTER DARI BERANDA) -->
+<footer class="w-full bg-[#08143a] text-white pt-12 pb-8 border-t border-[#0a1744] mt-auto relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+      <!-- Brand Profile -->
+      <div class="lg:col-span-5 space-y-3">
+        <div class="flex items-center gap-3">
+          <img alt="Logo CiptaCoding" class="h-8 w-auto object-contain bg-white p-1 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1c16t_3qpUHK5MKtFfw0a3wWEB4jk069vDksN062PIluB3scNRs0QDRd__0HnxoseaBeSAUTaY8i92lfXdPmqmQ9Ydt2HMUSQg5DzkKVReDH3VwV7OWasnMwGc3xaHn3cXj-9kotv2WXHvVQ2THk--oYtZQ_7PhwGkWlXG7wPBD_gZ3T6hvRaq9PlxjNkDzENlgMkPfa6FsilqJ6x9a38d1YSUB8w-JpYqDpPtDMMQWk3MSqQVhrM3K4ddVz1FoGdkg"/>
+          <span class="font-display text-xl text-white font-extrabold">Cipta<span class="text-[#0062ff]">Coding</span></span>
+        </div>
+        <p class="text-xs text-slate-300 max-w-sm leading-relaxed">
+          Mitra terpercaya bimbingan coding IT, pengerjaan modul praktikum, pembuatan website, dan sistem digital bisnis dengan standar clean architecture dan garansi revisi tuntas.
+        </p>
+        <div class="flex items-center gap-2 text-xs text-emerald-400 font-semibold pt-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>100% Source Code Orisinal &amp; Bimbingan Sidang 1-on-1</span>
+        </div>
+      </div>
+      <!-- Navigasi Cepat (5 Menu Utama) -->
+      <div class="lg:col-span-3 space-y-2">
+        <div class="text-xs uppercase font-extrabold tracking-wider text-slate-200">Menu Utama</div>
+        <ul class="space-y-2 text-xs text-slate-300">
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="index.html">Beranda</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="layanan.html">Katalog Layanan IT</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="cara-order.html">Alur Pemesanan</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="portofolio.html">Portofolio &amp; Studi Kasus</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="tanya-jawab.html">Tanya Jawab / FAQ</a></li>
+        </ul>
+      </div>
+      <!-- Kontak Resmi -->
+      <div class="lg:col-span-4 space-y-2">
+        <div class="text-xs uppercase font-extrabold tracking-wider text-slate-200">Kontak &amp; Konsultasi</div>
+        <p class="text-xs text-slate-300">Diskusikan kebutuhan tugas, skripsi, atau transformasi sistem digital UMKM Anda langsung dengan tim engineer kami.</p>
+        <div class="space-y-2 text-xs text-slate-300 pt-1">
+          <a class="flex items-center gap-2 hover:text-[#60a5fa] transition-colors group" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20di%20CiptaCoding" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-[#0062ff] group-hover:scale-110 transition-transform">chat</span>
+            <span>WhatsApp: 0877-2305-7547</span>
+          </a>
+          <a class="flex items-center gap-2 hover:text-[#60a5fa] transition-colors group" href="https://instagram.com/ciptacoding" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-[#0062ff] group-hover:scale-110 transition-transform">photo_camera</span>
+            <span>Instagram: @ciptacoding</span>
+          </a>
+          <div class="flex items-center gap-2 text-slate-400">
+            <span class="material-symbols-outlined text-[18px] text-slate-400">schedule</span>
+            <span>Senin - Minggu (08.00 - 23.00 WIB)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Copyright -->
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400 border-t border-white/10">
+      <p>© 2025 CiptaCoding. Hak Cipta Dilindungi.</p>
+      <div class="flex items-center gap-3">
+        <span>Privasi Mahasiswa Terjamin (NDA)</span>
+        <span>•</span>
+        <span>Garansi Revisi &amp; Bimbingan Sidang</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP QUICK CTA BUTTON (MASTER DARI BERANDA) -->
+<div class="fixed bottom-6 right-6 z-50 flex items-center group">
+  <a class="flex items-center gap-2.5 bg-[#0062ff] hover:bg-[#0051d4] text-white px-4 py-3 rounded-full shadow-2xl hover:shadow-[#0062ff]/50 border-2 border-white/90 transition-all duration-300 active:scale-95 animate-bounce-subtle group-hover:pr-5 group-hover:scale-105" href="https://wa.me/6287723057547?text=Halo%20kak%20CiptaCoding%2C%20saya%20mau%20tanya-tanya%20konsultasi%20sekarang" rel="noopener noreferrer" target="_blank" title="Chat WhatsApp Fast Response">
+    <div class="relative flex items-center justify-center">
+      <span class="material-symbols-outlined text-[24px]">chat</span>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border border-white animate-ping"></span>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border border-white"></span>
+    </div>
+    <div class="text-left leading-tight hidden sm:block">
+      <p class="text-[10px] uppercase font-bold text-blue-200">Online <span class="text-emerald-300 font-extrabold">&lt;10 Mnt</span></p>
+      <p class="text-xs font-bold text-white tracking-wide">Konsultasi Gratis</p>
+    </div>
+  </a>
+</div>
+
+<!-- COMMON INTERACTION SCRIPTS (Navbar Scroll, Mobile Drawer, 3D Tilt, Reveal, Count-Up) -->
+<script>
+// 1. Navbar Scroll Glass Elevation
+const mainHeader = document.getElementById('main-header');
+if (mainHeader) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      mainHeader.classList.add('navbar-scrolled');
+    } else {
+      mainHeader.classList.remove('navbar-scrolled');
+    }
+  }, { passive: true });
+}
+
+// 2. Mobile Menu Toggle
+const mobileBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const icon = mobileBtn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+    }
+  });
+}
+
+// 3. 3D Tilt Effect on Cards (Hover capable devices only)
+if (window.matchMedia('(hover: hover)').matches) {
+  document.querySelectorAll('.tilt-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -4;
+      const rotateY = ((x - centerX) / centerX) * 4;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+    });
+  });
+}
+
+// 4. Scroll Reveal with Staggering
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal-show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal-init').forEach(el => observer.observe(el));
+
+// 5. Universal Counter Number Count-Up Animation
+function runCountUp(el) {
+  const target = parseFloat(el.getAttribute('data-target') || '0');
+  const suffix = el.getAttribute('data-suffix') || '';
+  const isDecimal = el.getAttribute('data-decimal') ? parseInt(el.getAttribute('data-decimal')) : 0;
+  const duration = 1500;
+  const startTime = performance.now();
+
+  function updateNumber(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+    const current = target * ease;
+    
+    if (isDecimal > 0) {
+      el.textContent = current.toFixed(isDecimal) + suffix;
+    } else if (target >= 1000) {
+      el.textContent = Math.floor(current).toLocaleString('id-ID') + suffix;
+    } else {
+      el.textContent = Math.floor(current) + suffix;
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(updateNumber);
+    } else {
+      if (isDecimal > 0) el.textContent = target.toFixed(isDecimal) + suffix;
+      else if (target >= 1000) el.textContent = target.toLocaleString('id-ID') + suffix;
+      else el.textContent = target + suffix;
+    }
+  }
+  requestAnimationFrame(updateNumber);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counters = entry.target.querySelectorAll('.counter-number');
+      counters.forEach(c => runCountUp(c));
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.25 });
+document.querySelectorAll('[data-counter-container], #metrics-section, .counter-wrapper').forEach(el => counterObserver.observe(el));
+</script>
+</body>
+</html>
+

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Alur & Cara Pemesanan Mudah - CiptaCoding - CiptaCoding</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            navy: "#08143a",
+            dark: "#0a1744",
+            blue: "#0062ff",
+            hover: "#0051d4",
+            light: "#edf4ff",
+            subtle: "#f3f7fd"
+          },
+          primary: "#0062ff",
+          "primary-container": "#0062ff",
+          "on-primary": "#ffffff",
+          surface: "#f8faff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f1f5fb",
+          "surface-container": "#e8eef8",
+          "surface-container-high": "#dbe5f5",
+          "on-surface": "#08143a",
+          "on-surface-variant": "#495874",
+          "outline-variant": "#d2dced",
+          "inverse-surface": "#08143a",
+          "inverse-on-surface": "#f1f5fb"
+        },
+        fontFamily: {
+          body: ["Plus Jakarta Sans", "sans-serif"],
+          display: ["Plus Jakarta Sans", "sans-serif"],
+          code: ["JetBrains Mono", "monospace"]
+        }
+      }
+    }
+  };
+  </script>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#f8faff] font-body text-[#08143a] antialiased min-h-screen flex flex-col justify-between selection:bg-[#0062ff] selection:text-white relative">
+
+<!-- Top Bar Promosi / Announcement (Master dari Beranda) -->
+<div class="w-full bg-[#08143a] text-white py-2 px-4 text-center text-xs font-semibold flex items-center justify-center gap-2 border-b border-[#0a1744] shadow-sm z-50 relative">
+  <div class="flex flex-wrap items-center justify-center gap-2 max-w-7xl mx-auto">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#0062ff]/20 text-[#60a5fa] border border-[#0062ff]/30 text-[11px]">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+      </span>
+      WhatsApp Fast Response &lt; 10 Menit
+    </span>
+    <span class="text-slate-200">Mitra Solusi Coding &amp; Pembuatan Website Terpercaya 2.500+ Klien &amp; Mahasiswa | IG: <a class="underline font-bold text-[#60a5fa] hover:text-white transition-colors" href="https://instagram.com/ciptacoding" rel="noopener noreferrer" target="_blank">@ciptacoding</a></span>
+  </div>
+</div>
+
+<!-- HEADER / NAVBAR (Master dari Beranda dengan micro-interactions) -->
+<header id="main-header" class="sticky top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#d2dced]/70 shadow-[0_2px_12px_rgba(8,20,58,0.04)] transition-all duration-300">
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+    <!-- Brand Logo Sesuai Template Resmi CiptaCoding -->
+    <a class="flex items-center gap-3 focus:outline-none group" href="index.html">
+      <img alt="Logo CiptaCoding" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3JvyuPHO0m1YFnLUOhlaagbNn64nXerWaYsbhW6oQWc76l4TKO8ZAJ_4MnVo9ji_iuwayzuiZJDK4ktkbJWVr0iNB-IbU-PCql0cm1HLyKN3su0Sta-C0x69hYGI23ZZKt98V7HAg_QFP9czl5IXAtAEfHA8IHTXkOc6dQvuVqYAnrN3yy_p_BnUPLFD3p99TxYGZyuTX0BGx6K_4Xq952rIb-FLAVws_Cnde4t-hIMeSKsAkdC_uGj9NxF-kYMw1gw"/>
+      <span class="font-display text-xl sm:text-2xl text-[#08143a] font-extrabold tracking-tight">Cipta<span class="text-[#0062ff]">Coding</span></span>
+    </a>
+    <!-- Nav Links Desktop (5 Menu) -->
+    <nav class="hidden lg:flex items-center gap-5">
+      <a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="index.html">Beranda</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="layanan.html">Layanan</a><a class="relative text-sm font-bold text-[#0062ff] bg-[#edf4ff] px-3.5 py-1.5 rounded-xl transition-all shadow-2xs" href="cara-order.html">Cara Order</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="portofolio.html">Portofolio</a><a class="relative text-sm font-semibold text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff]/60 px-3.5 py-1.5 rounded-xl transition-all" href="tanya-jawab.html">Tanya Jawab</a>
+    </nav>
+    <!-- Nav Action CTA (Tanpa Icon Instagram) -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a class="btn-shimmer btn-hover-lift inline-flex items-center gap-2 bg-[#0062ff] text-white hover:bg-[#0051d4] font-semibold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-[0.98] animate-pulse-glow group" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20kebutuhan%20coding%20di%20CiptaCoding" rel="noopener noreferrer" target="_blank">
+        <span>Konsultasi Gratis</span>
+        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">chat</span>
+      </a>
+      <!-- Hamburger button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#495874] hover:text-[#0062ff] hover:bg-[#edf4ff] rounded-xl transition-colors focus:outline-none" aria-label="Buka Menu Navigasi">
+        <span class="material-symbols-outlined text-[26px]">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-[#d2dced] px-4 pt-3 pb-6 space-y-2 shadow-xl">
+    <a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="index.html">Beranda</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="layanan.html">Layanan</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-bold bg-[#edf4ff] text-[#0062ff]" href="cara-order.html">Cara Order</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="portofolio.html">Portofolio</a><a class="block py-2.5 px-3.5 rounded-xl text-sm font-semibold text-[#495874] hover:bg-slate-50 hover:text-[#0062ff] transition-colors" href="tanya-jawab.html">Tanya Jawab</a>
+    <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+      <a class="btn-shimmer w-full flex items-center justify-center gap-2 bg-[#0062ff] text-white py-3 rounded-xl font-bold text-sm shadow-md" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20kebutuhan%20coding%20di%20CiptaCoding" target="_blank">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>Konsultasi Cepat via WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<main class="w-full flex-grow relative overflow-hidden">
+  <!-- Subtle Background Glows -->
+  <div class="absolute -top-16 -left-20 w-96 h-96 bg-[#0062ff]/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute top-1/3 -right-20 w-96 h-96 bg-[#08143a]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- HERO SECTION CARA ORDER -->
+  <section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 bg-tech-grid">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-8 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#d2dced] shadow-xs text-xs font-semibold text-[#08143a]">
+          <span class="flex h-2.5 w-2.5 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0062ff] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#0062ff]"></span>
+          </span>
+          <span class="text-[#0062ff] font-bold">Workflow Transparan &amp; Fleksibel</span>
+          <span class="text-slate-300">•</span>
+          <span class="text-[#495874]">Tanpa Birokrasi Rumit</span>
+        </div>
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-[#08143a] tracking-tight leading-[1.18]">
+          Alur Pemesanan Santai &amp; <span class="text-[#0062ff]">Terbuka di CiptaCoding.</span>
+        </h1>
+        <p class="text-[#495874] text-base sm:text-lg leading-relaxed max-w-2xl">
+          Proses mudah dan jelas sejak hari pertama. Dari diskusi santai, analisis kompleksitas, pengerjaan bertahap dengan video demo rutin, hingga simulasi bimbingan sidang live 1-on-1.
+        </p>
+      </div>
+      <div class="lg:col-span-4 grid grid-cols-2 gap-3.5">
+        <div class="tilt-card bg-white p-4 sm:p-5 rounded-2xl border border-[#d2dced] shadow-xs text-center hover:border-[#0062ff] transition-all">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-[#edf4ff] text-[#0062ff] flex items-center justify-center mb-2 font-bold icon-pop">
+            <span class="material-symbols-outlined text-[22px]">schedule</span>
+          </div>
+          <div class="font-display text-2xl font-extrabold text-[#08143a] counter-number" data-target="100" data-suffix="%">100%</div>
+          <p class="text-xs text-[#495874] font-semibold mt-0.5">Tepat Waktu</p>
+        </div>
+        <div class="tilt-card bg-white p-4 sm:p-5 rounded-2xl border border-[#d2dced] shadow-xs text-center hover:border-emerald-400 transition-all">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-2 font-bold icon-pop">
+            <span class="material-symbols-outlined text-[22px]">headset_mic</span>
+          </div>
+          <div class="font-display text-2xl font-extrabold text-[#08143a]">1-on-1</div>
+          <p class="text-xs text-[#495874] font-semibold mt-0.5">Mentor Privat</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE 4-STEP VISUAL ROADMAP -->
+  <section class="reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-8">
+      <div>
+        <span class="text-[11px] uppercase font-extrabold tracking-widest text-[#0062ff] bg-[#edf4ff] px-3.5 py-1 rounded-full border border-[#0062ff]/20">Roadmap Kerja</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-[#08143a] tracking-tight mt-1.5">
+          4 Langkah Praktis Dari Awal Hingga Siap Sidang
+        </h2>
+      </div>
+      <p class="text-xs sm:text-sm text-[#495874] max-w-md">
+        Klik tiap tahapan di bawah ini untuk melihat rincian SOP kerja dan jaminan hak Anda sebagai klien.
+      </p>
+    </div>
+
+    <!-- 4 Bento Cards Grid with Connecting Journey Line -->
+    <div class="relative">
+      <!-- Desktop Visual Connecting Progress Line -->
+      <div class="hidden lg:block absolute top-10 left-16 right-16 h-0.5 bg-gradient-to-r from-[#0062ff] via-[#0062ff]/40 to-[#0062ff] pointer-events-none z-0"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative z-10" id="workflowSteps">
+        <!-- Step 1 -->
+        <div class="step-card tilt-card bg-white rounded-2xl p-5 border-2 border-[#0062ff] shadow-md cursor-pointer transition-all flex flex-col justify-between stagger-1" onclick="selectStep(1)" id="step-card-1">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="step-badge w-8 h-8 rounded-xl bg-[#0062ff] text-white font-bold text-sm flex items-center justify-center shadow-xs">1</span>
+              <span class="material-symbols-outlined text-[#0062ff] text-[22px] icon-glide">upload_file</span>
+            </div>
+            <h3 class="font-display text-sm font-bold text-[#08143a]">Kirim Materi Awal</h3>
+            <p class="text-xs text-[#495874] mt-1.5 leading-relaxed">Kirimkan modul tugas kuliah, silabus, atau draf proposal skripsi Anda via WhatsApp.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-[#0062ff]">
+            <span>Review Gratis</span>
+            <span class="material-symbols-outlined text-[15px] icon-glide">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs cursor-pointer transition-all hover:border-[#0062ff] flex flex-col justify-between stagger-2" onclick="selectStep(2)" id="step-card-2">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="step-badge w-8 h-8 rounded-xl bg-[#edf4ff] text-[#0062ff] font-bold text-sm flex items-center justify-center">2</span>
+              <span class="material-symbols-outlined text-slate-400 text-[22px] icon-glide">handshake</span>
+            </div>
+            <h3 class="font-display text-sm font-bold text-[#08143a]">Diskusi &amp; Deal Waktu</h3>
+            <p class="text-xs text-[#495874] mt-1.5 leading-relaxed">Bedah fitur esensial, penentuan tech stack terbaik, dan kesepakatan timeline deadline aman.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-[#495874]">
+            <span>Tanpa Biaya Gaib</span>
+            <span class="material-symbols-outlined text-[15px] icon-glide">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs cursor-pointer transition-all hover:border-[#0062ff] flex flex-col justify-between stagger-3" onclick="selectStep(3)" id="step-card-3">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="step-badge w-8 h-8 rounded-xl bg-[#edf4ff] text-[#0062ff] font-bold text-sm flex items-center justify-center">3</span>
+              <span class="material-symbols-outlined text-slate-400 text-[22px] icon-glide">terminal</span>
+            </div>
+            <h3 class="font-display text-sm font-bold text-[#08143a]">Coding &amp; Demo Video</h3>
+            <p class="text-xs text-[#495874] mt-1.5 leading-relaxed">Pengerjaan kode rapi dengan laporan progres berkala dalam bentuk video demo atau chat.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-[#495874]">
+            <span>Pantau Berkala</span>
+            <span class="material-symbols-outlined text-[15px] icon-glide">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card tilt-card bg-white rounded-2xl p-5 border border-[#d2dced] shadow-xs cursor-pointer transition-all hover:border-[#0062ff] flex flex-col justify-between stagger-4" onclick="selectStep(4)" id="step-card-4">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="step-badge w-8 h-8 rounded-xl bg-[#edf4ff] text-[#0062ff] font-bold text-sm flex items-center justify-center">4</span>
+              <span class="material-symbols-outlined text-slate-400 text-[22px] icon-glide">school</span>
+            </div>
+            <h3 class="font-display text-sm font-bold text-[#08143a]">Serah Terima &amp; Mentor</h3>
+            <p class="text-xs text-[#495874] mt-1.5 leading-relaxed">Penyerahan source code lengkap + database dan pendampingan 1-on-1 sampai Anda paham.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-[#495874]">
+            <span>Garansi Revisi</span>
+            <span class="material-symbols-outlined text-[15px] icon-glide">arrow_forward</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Step Detail Box -->
+    <div class="mt-6 bg-[#f1f5fb] rounded-2xl p-6 border border-[#d2dced] flex flex-col sm:flex-row items-start sm:items-center gap-4 transition-all duration-300" id="stepDetailBox">
+      <div class="w-12 h-12 rounded-xl bg-[#0062ff] text-white flex items-center justify-center shrink-0 shadow-md icon-pop">
+        <span class="material-symbols-outlined text-[26px]" id="stepDetailIcon">upload_file</span>
+      </div>
+      <div class="flex-grow space-y-1">
+        <h4 class="font-display text-base font-bold text-[#08143a]" id="stepDetailTitle">
+          Langkah 1: Pengiriman Dokumen &amp; Diskusi Awal
+        </h4>
+        <p class="text-xs sm:text-sm text-[#495874] leading-relaxed" id="stepDetailDesc">
+          Anda cukup mengirimkan file PDF modul praktikum, lembar soal, atau draf proposal skripsi Anda. Kami menjaga kerahasiaan 100% dan memberikan feedback teknis tanpa dipungut biaya.
+        </p>
+      </div>
+      <a class="shrink-0 inline-flex items-center gap-1.5 bg-[#0062ff] hover:bg-[#0051d4] text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-xs transition-all btn-shimmer btn-hover-lift" href="https://wa.me/6287723057547?text=Halo%20kak%20CiptaCoding,%20saya%20mau%20konsultasi%20tugas/skripsi" target="_blank">
+        <span>Kirim Materi via WA</span>
+        <span class="material-symbols-outlined text-[16px] icon-glide">chat</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- LIVE WHATSAPP ORDER FORM SIMULATOR (Visual Bento Master Beranda) -->
+  <section class="reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#d2dced] shadow-lg">
+      <div class="text-center max-w-2xl mx-auto mb-8 space-y-2">
+        <span class="text-[11px] uppercase font-extrabold tracking-widest text-[#0062ff] bg-[#edf4ff] px-3.5 py-1 rounded-full border border-[#0062ff]/20">Formulir Mandiri</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-[#08143a] tracking-tight">
+          Buat Draf Pesan Konsultasi Cepat
+        </h2>
+        <p class="text-xs sm:text-sm text-[#495874]">
+          Pilih kategori dan isi rincian singkat di bawah ini. Format pesan WhatsApp akan otomatis terangkai rapi.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Form Inputs (Left Column) -->
+        <div class="lg:col-span-7 space-y-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#08143a] mb-2">1. Pilih Kategori Proyek</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="categoryButtons">
+              <button type="button" class="category-btn py-2.5 px-3 rounded-xl text-xs font-bold bg-[#0062ff] text-white shadow-xs transition-all" onclick="selectCategory('Skripsi IT')">
+                Skripsi IT
+              </button>
+              <button type="button" class="category-btn py-2.5 px-3 rounded-xl text-xs font-semibold bg-[#f1f5fb] text-[#08143a] border border-[#d2dced] hover:border-[#0062ff] transition-all" onclick="selectCategory('Tugas Kuliah')">
+                Tugas Kuliah
+              </button>
+              <button type="button" class="category-btn py-2.5 px-3 rounded-xl text-xs font-semibold bg-[#f1f5fb] text-[#08143a] border border-[#d2dced] hover:border-[#0062ff] transition-all" onclick="selectCategory('Website UMKM')">
+                Website / UMKM
+              </button>
+              <button type="button" class="category-btn py-2.5 px-3 rounded-xl text-xs font-semibold bg-[#f1f5fb] text-[#08143a] border border-[#d2dced] hover:border-[#0062ff] transition-all" onclick="selectCategory('Fixing Bug')">
+                Fix Bug / API
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-[#08143a] mb-1.5" for="userName">Nama Anda / Kampus</label>
+              <input type="text" id="userName" placeholder="Contoh: Rian (Univ Brawijaya)" class="w-full bg-[#f8faff] border border-[#d2dced] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#08143a] focus:bg-white focus:outline-none focus:border-[#0062ff] focus:ring-2 focus:ring-[#0062ff]/20 transition-all"/>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-[#08143a] mb-1.5" for="userDeadline">Target Deadline</label>
+              <input type="text" id="userDeadline" placeholder="Contoh: 15 November / 2 Minggu" class="w-full bg-[#f8faff] border border-[#d2dced] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#08143a] focus:bg-white focus:outline-none focus:border-[#0062ff] focus:ring-2 focus:ring-[#0062ff]/20 transition-all"/>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-[#08143a] mb-1.5" for="techStack">Preferensi Bahasa / Framework (Opsional)</label>
+            <input type="text" id="techStack" placeholder="Contoh: Laravel 11, Flutter, Python, React, dll." class="w-full bg-[#f8faff] border border-[#d2dced] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#08143a] focus:bg-white focus:outline-none focus:border-[#0062ff] focus:ring-2 focus:ring-[#0062ff]/20 transition-all"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-[#08143a] mb-1.5" for="projectDesc">Ringkasan Kebutuhan / Judul</label>
+            <textarea id="projectDesc" rows="3" placeholder="Ceritakan gambaran singkat sistem atau kesulitan yang dihadapi..." class="w-full bg-[#f8faff] border border-[#d2dced] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#08143a] focus:bg-white focus:outline-none focus:border-[#0062ff] focus:ring-2 focus:ring-[#0062ff]/20 transition-all resize-none"></textarea>
+          </div>
+        </div>
+
+        <!-- Live Terminal Preview (Right Column) -->
+        <div class="lg:col-span-5 bg-[#08143a] text-slate-200 rounded-2xl p-5 border border-[#0a1744] shadow-xl font-code text-xs space-y-4">
+          <div class="flex items-center justify-between border-b border-white/10 pb-3">
+            <div class="flex gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+            </div>
+            <span class="text-[10px] text-slate-400 font-medium">pratinjau_pesan_wa.txt</span>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 min-h-[160px] text-[11px] leading-relaxed whitespace-pre-wrap text-blue-200" id="previewText">Halo CiptaCoding, saya Rian Pratama ingin konsultasi pengerjaan sistem:
+- Kategori: Skripsi IT
+- Target Deadline: 15 November / 2 Minggu
+- Catatan/Ringkasan: Mohon diskusi ketersediaan jadwal pengerjaan.</div>
+
+          <button type="button" onclick="handleSendWhatsApp()" class="w-full inline-flex items-center justify-center gap-2 bg-[#0062ff] hover:bg-[#0051d4] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all active:scale-[0.98] btn-shimmer btn-hover-lift">
+            <span class="material-symbols-outlined text-[18px] icon-glide">chat</span>
+            <span>Kirim Pesan ke WhatsApp</span>
+          </button>
+          <p class="text-[10px] text-slate-400 text-center font-body">Pesan akan langsung dibuka di WhatsApp Resmi CiptaCoding</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ PEMESANAN ACCORDIONS (Gaya Accordion Beranda) -->
+  <section class="reveal-init max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="text-center max-w-xl mx-auto space-y-2 mb-8">
+      <span class="text-[11px] uppercase font-extrabold tracking-widest text-[#0062ff] bg-[#edf4ff] px-3.5 py-1 rounded-full border border-[#0062ff]/20">Tanya Jawab Alur</span>
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-[#08143a] tracking-tight">
+        Hal yang Sering Ditanyakan
+      </h2>
+    </div>
+
+    <div class="space-y-3" id="order-faq-list">
+      <!-- FAQ 1 -->
+      <div class="bg-white rounded-xl border border-[#d2dced] shadow-2xs overflow-hidden transition-all hover:border-[#0062ff]/60">
+        <button class="faq-btn w-full p-4 text-left flex items-center justify-between gap-3 font-bold text-[#08143a] hover:text-[#0062ff] transition-colors focus:outline-none" type="button">
+          <span class="text-xs sm:text-sm">Berapa lama estimasi pengerjaan tugas atau skripsi?</span>
+          <span class="material-symbols-outlined faq-chevron text-[#0062ff] text-[20px] transition-transform duration-300 ease-out">expand_more</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4">
+          <p class="pb-4 text-xs text-[#495874] leading-relaxed border-t border-slate-100 pt-2.5">
+            Waktu pengerjaan sangat fleksibel menyesuaikan kebutuhan Anda. Untuk tugas praktikum mingguan bisa selesai dalam 1x24 jam (Express), sedangkan untuk proyek skripsi atau website bisnis biasanya memerlukan 5 hingga 14 hari tergantung kompleksitas modul.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="bg-white rounded-xl border border-[#d2dced] shadow-2xs overflow-hidden transition-all hover:border-[#0062ff]/60">
+        <button class="faq-btn w-full p-4 text-left flex items-center justify-between gap-3 font-bold text-[#08143a] hover:text-[#0062ff] transition-colors focus:outline-none" type="button">
+          <span class="text-xs sm:text-sm">Apakah ada sistem pembayaran bertahap (DP)?</span>
+          <span class="material-symbols-outlined faq-chevron text-[#0062ff] text-[20px] transition-transform duration-300 ease-out">expand_more</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4">
+          <p class="pb-4 text-xs text-[#495874] leading-relaxed border-t border-slate-100 pt-2.5">
+            Tentu saja. Untuk proyek bernilai menengah dan besar seperti skripsi atau website profil, pembayaran dibagi menjadi Down Payment (DP) awal dan pelunasan setelah Anda melihat demo video aplikasi berjalan sesuai kesepakatan.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="bg-white rounded-xl border border-[#d2dced] shadow-2xs overflow-hidden transition-all hover:border-[#0062ff]/60">
+        <button class="faq-btn w-full p-4 text-left flex items-center justify-between gap-3 font-bold text-[#08143a] hover:text-[#0062ff] transition-colors focus:outline-none" type="button">
+          <span class="text-xs sm:text-sm">Bagaimana jika dosen pembimbing meminta revisi fitur?</span>
+          <span class="material-symbols-outlined faq-chevron text-[#0062ff] text-[20px] transition-transform duration-300 ease-out">expand_more</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4">
+          <p class="pb-4 text-xs text-[#495874] leading-relaxed border-t border-slate-100 pt-2.5">
+            Kami memberikan garansi revisi pendampingan secara aktif. Setiap catatan masukan dari dosen pembimbing maupun penguji akan kami bantu revisi sesuai dengan cakupan kesepakatan awal hingga Anda lulus sidang.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE REASSURANCE BANNER (Master dari Beranda) -->
+  <section class="reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="relative rounded-3xl bg-[#08143a] text-white p-7 sm:p-10 lg:p-12 overflow-hidden shadow-xl border border-[#0a1744] text-center">
+      <div class="absolute -right-16 -top-16 w-72 h-72 bg-[#0062ff]/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-16 -bottom-16 w-72 h-72 bg-[#0062ff]/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="relative z-10 max-w-2xl mx-auto space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-slate-200 text-xs font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span>100% Non-Disclosure Agreement (NDA)</span>
+        </div>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
+          Privasi Dokumen &amp; Identitas Terlindungi Penuh
+        </h2>
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          Nama Anda, kampus, serta judul penelitian Anda tidak akan pernah dibagikan atau dipublikasikan kepada pihak manapun. Keamanan Anda adalah prioritas mutlak kami.
+        </p>
+        <div class="pt-2">
+          <a class="inline-flex items-center justify-center gap-2 bg-[#0062ff] text-white hover:bg-[#0051d4] font-bold text-sm px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all active:scale-[0.98] ring-4 ring-[#0062ff]/30 btn-shimmer btn-hover-lift" href="https://wa.me/6287723057547?text=Halo%20kak%20CiptaCoding,%20saya%20mau%20konsultasi%20order%20sekarang" target="_blank">
+            <span class="material-symbols-outlined text-[20px] icon-glide">chat</span>
+            <span>Mulai Konsultasi via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+// Step selection logic
+function selectStep(step) {
+  for (let i = 1; i <= 4; i++) {
+    const card = document.getElementById('step-card-' + i);
+    const badge = card.querySelector('.step-badge');
+    if (i === step) {
+      card.classList.add('border-[#0062ff]', 'border-2', 'shadow-md');
+      card.classList.remove('border-[#d2dced]', 'border');
+      if (badge) {
+        badge.classList.add('bg-[#0062ff]', 'text-white');
+        badge.classList.remove('bg-[#edf4ff]', 'text-[#0062ff]');
+      }
+    } else {
+      card.classList.remove('border-[#0062ff]', 'border-2', 'shadow-md');
+      card.classList.add('border-[#d2dced]', 'border');
+      if (badge) {
+        badge.classList.remove('bg-[#0062ff]', 'text-white');
+        badge.classList.add('bg-[#edf4ff]', 'text-[#0062ff]');
+      }
+    }
+  }
+
+  const titleElem = document.getElementById('stepDetailTitle');
+  const descElem = document.getElementById('stepDetailDesc');
+  const iconElem = document.getElementById('stepDetailIcon');
+
+  if (step === 1) {
+    iconElem.textContent = 'upload_file';
+    titleElem.textContent = 'Langkah 1: Pengiriman Dokumen & Diskusi Awal';
+    descElem.textContent = 'Anda cukup mengirimkan file PDF modul praktikum, lembar soal, atau draf proposal skripsi Anda. Kami menjaga kerahasiaan 100% dan memberikan feedback teknis tanpa dipungut biaya.';
+  } else if (step === 2) {
+    iconElem.textContent = 'handshake';
+    titleElem.textContent = 'Langkah 2: Telaah & Estimasi Waktu Aman';
+    descElem.textContent = 'Tech lead menganalisis kompleksitas logika database dan algoritma untuk menyepakati timeline yang realistis dan transparan sebelum pengerjaan dimulai.';
+  } else if (step === 3) {
+    iconElem.textContent = 'terminal';
+    titleElem.textContent = 'Langkah 3: Kode Rapi & Laporan Berkala';
+    descElem.textContent = 'Anda tidak ditinggal sendiri. Laporan progres diberikan secara berkala dalam format video demo atau tangkapan layar live test setiap modul selesai.';
+  } else if (step === 4) {
+    iconElem.textContent = 'school';
+    titleElem.textContent = 'Langkah 4: Serah Terima & Mentoring Sidang';
+    descElem.textContent = 'Bimbingan personal Google Meet disediakan sampai Anda paham logika baris kode dan siap menghadapi pertanyaan dosen penguji dengan percaya diri.';
+  }
+}
+
+// Form Builder Logic
+let activeCategory = 'Skripsi IT';
+function selectCategory(catName) {
+  activeCategory = catName;
+  const buttons = document.querySelectorAll('.category-btn');
+  buttons.forEach(btn => {
+    if (btn.textContent.trim() === catName) {
+      btn.className = 'category-btn py-2.5 px-3 rounded-xl text-xs font-bold bg-[#0062ff] text-white shadow-xs transition-all';
+    } else {
+      btn.className = 'category-btn py-2.5 px-3 rounded-xl text-xs font-semibold bg-[#f1f5fb] text-[#08143a] border border-[#d2dced] hover:border-[#0062ff] transition-all';
+    }
+  });
+  updateLivePreview();
+}
+
+function updateLivePreview() {
+  const name = document.getElementById('userName').value.trim() || 'Rian Pratama';
+  const deadline = document.getElementById('userDeadline').value.trim() || '15 November / 2 Minggu';
+  const tech = document.getElementById('techStack').value.trim();
+  const desc = document.getElementById('projectDesc').value.trim() || 'Mohon diskusi ketersediaan jadwal pengerjaan.';
+
+  let message = 'Halo CiptaCoding, saya ' + name + ' ingin konsultasi pengerjaan sistem:\n' +
+    '- Kategori: ' + activeCategory + '\n' +
+    '- Target Deadline: ' + deadline + '\n';
+  
+  if (tech) {
+    message += '- Stack Pilihan: ' + tech + '\n';
+  }
+  message += '- Catatan/Ringkasan: ' + desc;
+
+  document.getElementById('previewText').textContent = message;
+  return message;
+}
+
+const inputs = ['userName', 'userDeadline', 'techStack', 'projectDesc'];
+inputs.forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('input', updateLivePreview);
+});
+
+function handleSendWhatsApp() {
+  const finalMsg = updateLivePreview();
+  const encoded = encodeURIComponent(finalMsg);
+  window.open('https://wa.me/6287723057547?text=' + encoded, '_blank');
+}
+
+// Accordion Logic
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const chevron = btn.querySelector('.faq-chevron');
+    const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+    document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+    document.querySelectorAll('.faq-chevron').forEach(i => i.classList.remove('rotate-180'));
+
+    if (!isOpen) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      chevron.classList.add('rotate-180');
+    }
+  });
+});
+</script>
+
+<!-- FOOTER (MASTER DARI BERANDA) -->
+<footer class="w-full bg-[#08143a] text-white pt-12 pb-8 border-t border-[#0a1744] mt-auto relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+      <!-- Brand Profile -->
+      <div class="lg:col-span-5 space-y-3">
+        <div class="flex items-center gap-3">
+          <img alt="Logo CiptaCoding" class="h-8 w-auto object-contain bg-white p-1 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1c16t_3qpUHK5MKtFfw0a3wWEB4jk069vDksN062PIluB3scNRs0QDRd__0HnxoseaBeSAUTaY8i92lfXdPmqmQ9Ydt2HMUSQg5DzkKVReDH3VwV7OWasnMwGc3xaHn3cXj-9kotv2WXHvVQ2THk--oYtZQ_7PhwGkWlXG7wPBD_gZ3T6hvRaq9PlxjNkDzENlgMkPfa6FsilqJ6x9a38d1YSUB8w-JpYqDpPtDMMQWk3MSqQVhrM3K4ddVz1FoGdkg"/>
+          <span class="font-display text-xl text-white font-extrabold">Cipta<span class="text-[#0062ff]">Coding</span></span>
+        </div>
+        <p class="text-xs text-slate-300 max-w-sm leading-relaxed">
+          Mitra terpercaya bimbingan coding IT, pengerjaan modul praktikum, pembuatan website, dan sistem digital bisnis dengan standar clean architecture dan garansi revisi tuntas.
+        </p>
+        <div class="flex items-center gap-2 text-xs text-emerald-400 font-semibold pt-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>100% Source Code Orisinal &amp; Bimbingan Sidang 1-on-1</span>
+        </div>
+      </div>
+      <!-- Navigasi Cepat (5 Menu Utama) -->
+      <div class="lg:col-span-3 space-y-2">
+        <div class="text-xs uppercase font-extrabold tracking-wider text-slate-200">Menu Utama</div>
+        <ul class="space-y-2 text-xs text-slate-300">
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="index.html">Beranda</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="layanan.html">Katalog Layanan IT</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="cara-order.html">Alur Pemesanan</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="portofolio.html">Portofolio &amp; Studi Kasus</a></li>
+          <li><a class="hover:text-[#60a5fa] transition-colors" href="tanya-jawab.html">Tanya Jawab / FAQ</a></li>
+        </ul>
+      </div>
+      <!-- Kontak Resmi -->
+      <div class="lg:col-span-4 space-y-2">
+        <div class="text-xs uppercase font-extrabold tracking-wider text-slate-200">Kontak &amp; Konsultasi</div>
+        <p class="text-xs text-slate-300">Diskusikan kebutuhan tugas, skripsi, atau transformasi sistem digital UMKM Anda langsung dengan tim engineer kami.</p>
+        <div class="space-y-2 text-xs text-slate-300 pt-1">
+          <a class="flex items-center gap-2 hover:text-[#60a5fa] transition-colors group" href="https://wa.me/6287723057547?text=Halo%20kak%2C%20saya%20mau%20konsultasi%20di%20CiptaCoding" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-[#0062ff] group-hover:scale-110 transition-transform">chat</span>
+            <span>WhatsApp: 0877-2305-7547</span>
+          </a>
+          <a class="flex items-center gap-2 hover:text-[#60a5fa] transition-colors group" href="https://instagram.com/ciptacoding" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-[#0062ff] group-hover:scale-110 transition-transform">photo_camera</span>
+            <span>Instagram: @ciptacoding</span>
+          </a>
+          <div class="flex items-center gap-2 text-slate-400">
+            <span class="material-symbols-outlined text-[18px] text-slate-400">schedule</span>
+            <span>Senin - Minggu (08.00 - 23.00 WIB)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Copyright -->
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400 border-t border-white/10">
+      <p>© 2025 CiptaCoding. Hak Cipta Dilindungi.</p>
+      <div class="flex items-center gap-3">
+        <span>Privasi Mahasiswa Terjamin (NDA)</span>
+        <span>•</span>
+        <span>Garansi Revisi &amp; Bimbingan Sidang</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP QUICK CTA BUTTON (MASTER DARI BERANDA) -->
+<div class="fixed bottom-6 right-6 z-50 flex items-center group">
+  <a class="flex items-center gap-2.5 bg-[#0062ff] hover:bg-[#0051d4] text-white px-4 py-3 rounded-full shadow-2xl hover:shadow-[#0062ff]/50 border-2 border-white/90 transition-all duration-300 active:scale-95 animate-bounce-subtle group-hover:pr-5 group-hover:scale-105" href="https://wa.me/6287723057547?text=Halo%20kak%20CiptaCoding%2C%20saya%20mau%20tanya-tanya%20konsultasi%20sekarang" rel="noopener noreferrer" target="_blank" title="Chat WhatsApp Fast Response">
+    <div class="relative flex items-center justify-center">
+      <span class="material-symbols-outlined text-[24px]">chat</span>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border border-white animate-ping"></span>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border border-white"></span>
+    </div>
+    <div class="text-left leading-tight hidden sm:block">
+      <p class="text-[10px] uppercase font-bold text-blue-200">Online <span class="text-emerald-300 font-extrabold">&lt;10 Mnt</span></p>
+      <p class="text-xs font-bold text-white tracking-wide">Konsultasi Gratis</p>
+    </div>
+  </a>
+</div>
+
+<!-- COMMON INTERACTION SCRIPTS (Navbar Scroll, Mobile Drawer, 3D Tilt, Reveal, Count-Up) -->
+<script>
+// 1. Navbar Scroll Glass Elevation
+const mainHeader = document.getElementById('main-header');
+if (mainHeader) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      mainHeader.classList.add('navbar-scrolled');
+    } else {
+      mainHeader.classList.remove('navbar-scrolled');
+    }
+  }, { passive: true });
+}
+
+// 2. Mobile Menu Toggle
+const mobileBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const icon = mobileBtn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+    }
+  });
+}
+
+// 3. 3D Tilt Effect on Cards (Hover capable devices only)
+if (window.matchMedia('(hover: hover)').matches) {
+  document.querySelectorAll('.tilt-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -4;
+      const rotateY = ((x - centerX) / centerX) * 4;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+    });
+  });
+}
+
+// 4. Scroll Reveal with Staggering
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal-show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal-init').forEach(el => observer.observe(el));
+
+// 5. Universal Counter Number Count-Up Animation
+function runCountUp(el) {
+  const target = parseFloat(el.getAttribute('data-target') || '0');
+  const suffix = el.getAttribute('data-suffix') || '';
+  const isDecimal = el.getAttribute('data-decimal') ? parseInt(el.getAttribute('data-decimal')) : 0;
+  const duration = 1500;
+  const startTime = performance.now();
+
+  function updateNumber(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+    const current = target * ease;
+    
+    if (isDecimal > 0) {
+      el.textContent = current.toFixed(isDecimal) + suffix;
+    } else if (target >= 1000) {
+      el.textContent = Math.floor(current).toLocaleString('id-ID') + suffix;
+    } else {
+      el.textContent = Math.floor(current) + suffix;
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(updateNumber);
+    } else {
+      if (isDecimal > 0) el.textContent = target.toFixed(isDecimal) + suffix;
+      else if (target >= 1000) el.textContent = target.toLocaleString('id-ID') + suffix;
+      else el.textContent = target + suffix;
+    }
+  }
+  requestAnimationFrame(updateNumber);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counters = entry.target.querySelectorAll('.counter-number');
+      counters.forEach(c => runCountUp(c));
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.25 });
+document.querySelectorAll('[data-counter-container], #metrics-section, .counter-wrapper').forEach(el => counterObserver.observe(el));
+</script>
+</body>
+</html>
+
