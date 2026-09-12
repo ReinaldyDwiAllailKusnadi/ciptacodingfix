@@ -381,31 +381,6 @@ tailwind.config = {
 <p class="text-[11px] text-[#495874] leading-snug mt-0.5">Website bisnis aktif lancar, bimbingan koding jelas &amp; sabar.</p>
 </div>
 </div>
-<!-- FLOATING BADGE 3: INTERACTIVE LIVE TYPING TERMINAL OVERLAY -->
-<div class="hidden sm:block absolute top-10 -left-6 bg-[#08143a]/95 backdrop-blur-md text-slate-200 p-4 rounded-2xl shadow-2xl border border-white/20 max-w-[260px] font-code text-[11px] z-20 hover:border-[#0062ff] transition-all">
-<div class="flex items-center justify-between border-b border-white/10 pb-2 mb-2">
-<div class="flex gap-1.5">
-<span class="w-2.5 h-2.5 rounded-full bg-rose-500/90 inline-block"></span>
-<span class="w-2.5 h-2.5 rounded-full bg-amber-400/90 inline-block"></span>
-<span class="w-2.5 h-2.5 rounded-full bg-emerald-400/90 inline-block"></span>
-</div>
-<div class="flex items-center gap-1.5">
-<span class="text-[9px] px-1.5 py-0.5 bg-white/10 rounded text-slate-300 font-semibold cursor-pointer hover:bg-[#0062ff]/40 transition-colors" id="terminal-tab">ciptacoding.ts</span>
-<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-</div>
-</div>
-<!-- Live typing target line -->
-<p class="text-[#60a5fa] font-semibold leading-tight flex items-center flex-wrap">
-<span class="text-emerald-400">const</span>&nbsp;status =&nbsp;<span class="text-amber-300" id="live-typing-text">"Production Ready"</span><span class="cursor-blink"></span>
-</p>
-<p class="text-slate-400 mt-1 text-[10px]">// Clean Code • 100% Garansi Tuntas</p>
-<div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[10px]">
-  <span class="text-emerald-400 flex items-center gap-1 font-bold">
-    <span class="material-symbols-outlined text-[13px]">done_all</span> Deployed &amp; Tested
-  </span>
-  <span class="text-slate-400">v2.4.0</span>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -649,14 +624,14 @@ tailwind.config = {
 <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#0062ff] text-white">Populer</span>
 </div>
 <h3 class="font-display text-base font-bold text-[#08143a] group-hover:text-[#0062ff] transition-colors">Skripsi &amp; Tugas Akhir IT</h3>
-<p class="text-xs text-[#495874]">Web, Mobile App, Python AI/ML, SPK, dan IoT didampingi sampai sidang ACC A.</p>
+<p class="text-xs text-[#495874]">Web, Mobile App, Python AI/ML, SPK, dan IoT didampingi sampai sidang lulus tuntas.</p>
 <!-- Mini Dev Visual -->
 <div class="terminal-mini-box">
   <div class="flex items-center justify-between border-b border-white/10 pb-1 mb-1.5 text-[9px] text-slate-400">
     <span>● ● ● thesis_model.py</span>
     <span class="text-emerald-400 font-semibold">Ready</span>
   </div>
-  <p class="text-[10px]"><span class="text-purple-400">const</span> defense = <span class="text-amber-300">"ACC Nilai A"</span>;</p>
+  <p class="text-[10px]"><span class="text-purple-400">const</span> defense = <span class="text-amber-300">"Siap Sidang &amp; Disetujui"</span>;</p>
   <p class="text-[10px] text-emerald-400 flex items-center gap-1 mt-0.5 font-medium">
     <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> <span>Akurasi 98% • Dampingi Sidang</span>
   </p>
@@ -990,7 +965,7 @@ tailwind.config = {
 </div>
 <div class="px-4 pb-4">
 <span class="text-xs text-emerald-600 font-bold flex items-center gap-1">
-<span class="material-symbols-outlined text-[15px]">verified</span> Lulus Sidang Nilai A
+<span class="material-symbols-outlined text-[15px]">verified</span> Lulus Uji &amp; Sidang Lancar
             </span>
 </div>
 </div>
@@ -1053,14 +1028,14 @@ tailwind.config = {
 <span class="material-symbols-outlined text-[16px] fill-current">star</span>
 </div>
 <p class="text-xs text-[#08143a] leading-relaxed">
-            "Dibimbing sabar lewat Google Meet, logika sistem dijelasin detail sampai simulasi tanya-jawab dosen. Hasilnya sidang skripsi langsung ACC Nilai A!"
+            "Dibimbing sabar lewat Google Meet, logika sistem dijelasin detail sampai simulasi tanya-jawab dosen. Hasilnya sidang skripsi lancar dan langsung disetujui tanpa revisi rumit!"
           </p>
 </div>
 <div class="flex items-center gap-2.5 pt-2 border-t border-slate-100">
 <div class="w-8 h-8 rounded-full bg-[#edf4ff] text-[#0062ff] font-bold text-xs flex items-center justify-center">DA</div>
 <div>
 <p class="text-xs font-bold text-[#08143a]">Dimas Anggoro</p>
-<p class="text-[10px] text-[#495874]">Teknik Informatika • Lulus ACC A</p>
+<p class="text-[10px] text-[#495874]">Teknik Informatika • Lulus Sidang Skripsi</p>
 </div>
 </div>
 </div>
@@ -1296,57 +1271,7 @@ tailwind.config = {
 </footer>
 <!-- Interactive Scripts: Typing, Filters, Counters, FAQ, Tilt -->
 <script>
-// 1. LIVE TYPING ANIMATION IN TERMINAL
-const typingSnippets = [
-  '"ACC Nilai A"',
-  '"Bug Solved 100%"',
-  '"Clean Architecture"',
-  '"Ready to Deploy"'
-];
-let snippetIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-const typingEl = document.getElementById('live-typing-text');
-
-function typeAnimation() {
-  if (!typingEl) return;
-  const currentSnippet = typingSnippets[snippetIndex];
-  
-  if (isDeleting) {
-    typingEl.textContent = currentSnippet.substring(0, charIndex - 1);
-    charIndex--;
-  } else {
-    typingEl.textContent = currentSnippet.substring(0, charIndex + 1);
-    charIndex++;
-  }
-
-  let delay = isDeleting ? 40 : 80;
-
-  if (!isDeleting && charIndex === currentSnippet.length) {
-    delay = 2000;
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    snippetIndex = (snippetIndex + 1) % typingSnippets.length;
-    delay = 500;
-  }
-
-  setTimeout(typeAnimation, delay);
-}
-setTimeout(typeAnimation, 800);
-
-// Terminal tab toggle feedback
-const terminalTab = document.getElementById('terminal-tab');
-if (terminalTab) {
-  const tabs = ['ciptacoding.ts', 'defense_demo.py', 'mentor.live'];
-  let curTab = 0;
-  terminalTab.addEventListener('click', () => {
-    curTab = (curTab + 1) % tabs.length;
-    terminalTab.textContent = tabs[curTab];
-  });
-}
-
-// 2. INTERACTIVE SERVICE FILTER TABS
+// 1. INTERACTIVE SERVICE FILTER TABS
 const filterButtons = document.querySelectorAll('.filter-tab-btn');
 const serviceCards = document.querySelectorAll('.service-card');
 
